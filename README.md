@@ -2,7 +2,7 @@
 ## Author: Daniel Briseno Servin ###
 ### Description ###
 
-This project is a review of the XGBoost model for predicting the critical temperature of an arbitrary superconductor, as [proposed here.](https://linkinghub.elsevier.com/retrieve/pii/S0927025618304877). 
+This project is a review of the XGBoost model for predicting the critical temperature of an arbitrary superconductor, as [proposed here](https://linkinghub.elsevier.com/retrieve/pii/S0927025618304877). 
 
 In the linked paper, a RMSE of ~9.5 is given as the only metric for the model's performance. In this project I conduct a finer grained analysis of the predictive power of XGBoost at the task of predicting critical temperatures. More specifically, I analyze the performance of XGBoost across not only a general class of superconductors (as is done in the original paper), but also on certain classes of superconductors which are of particular practical interest. Additionally, I analyze how XGBoost performs on superconductors in different critical temperature quartiles.
 
