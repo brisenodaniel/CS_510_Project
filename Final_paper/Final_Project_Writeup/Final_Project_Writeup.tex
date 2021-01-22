@@ -435,7 +435,7 @@ In this report, we analyzed the performance of XGBoost across three categories o
  
  Future work in this direction could include implementing the proposed corrections to XGBoost's predictions, either by adding a average error penalty to the model's loss function, or by adding a correction term to the predicted values of $XGBoost$ which depend on the predicted $T_c$ quartiles.
  
- In addition, the analysis presented in this report relies heavily on summary statistics. The tables presented in the Results section are all averages of 50 or more error vectors. Each error vector is already a set of summary statistics for the raw errors of thousands of predictions. It may be appropriate to analyze directly analyze the distribution of raw errors rather than the distribution of their averages, as was done in this report. Doing so may yield more accurate data about correction terms and the nature of the bias in this model.
+ In addition, the analysis presented in this report relies heavily on summary statistics. The tables presented in the Results section are all averages of 50 or more error vectors. Each error vector is already a set of summary statistics for the raw errors of thousands of predictions. It may be appropriate to directly analyze the distribution of raw errors rather than the distribution of their averages, as was done in this report. Doing so may yield more accurate data about correction terms and the nature of the bias in this model.
  \newpage
 \printbibliography
 \end{document}
