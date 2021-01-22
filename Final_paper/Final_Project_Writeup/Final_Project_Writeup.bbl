@@ -1,0 +1,769 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{supremacy_quantum_2019}{article}{}
+      \name{author}{77}{}{%
+        {{hash=a0b41f4400dc855d7426a5f72cadaa6c}{%
+           family={Arute},
+           familyi={A\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0a2abe43325e0dd3690ccc47bfa6c6b7}{%
+           family={Arya},
+           familyi={A\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7bb1dcf8a93d1ecc6f9531ece93ef1fa}{%
+           family={Babbush},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5ef37e7fe45a9ff23c761910726d5e4b}{%
+           family={Bacon},
+           familyi={B\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d831c1d824f8a4e2a69f6495b8fdc91b}{%
+           family={Bardin},
+           familyi={B\bibinitperiod},
+           given={Joseph\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=659b693e073fa93a83924447ea805d77}{%
+           family={Barends},
+           familyi={B\bibinitperiod},
+           given={Rami},
+           giveni={R\bibinitperiod}}}%
+        {{hash=44196321323dfc67fdaa85c495168130}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Rupak},
+           giveni={R\bibinitperiod}}}%
+        {{hash=915e31fc5958183d06275c3c3e811123}{%
+           family={Boixo},
+           familyi={B\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cfb6bdb1d0b7056322d56e3f4fad93a8}{%
+           family={Brandao},
+           familyi={B\bibinitperiod},
+           given={Fernando\bibnamedelimb G.\bibnamedelimi S.\bibnamedelimi L.},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=11aed4b55c11ca1030deddd80f15b620}{%
+           family={Buell},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=fac8774f4c39c4cc9371a032e53c0fb6}{%
+           family={Burkett},
+           familyi={B\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5ffb5aba0d9858b862639d446d48f8eb}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1fac7e902845b1c2d0fd9ae4a0d00cc7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zijun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9cba836ac52ec45b3536ecac1ca0c4c4}{%
+           family={Chiaro},
+           familyi={C\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f16002805dc7f9d96346bda6700be931}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cf7e5385acaf82df7a53cd34a54e21e2}{%
+           family={Courtney},
+           familyi={C\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ecea25363fad364a9f4a37613078f227}{%
+           family={Dunsworth},
+           familyi={D\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5e61ee12360fc49d9013fbf8fe18db89}{%
+           family={Farhi},
+           familyi={F\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f27112cd6eb82fab2bc9d0542c995ea9}{%
+           family={Foxen},
+           familyi={F\bibinitperiod},
+           given={Brooks},
+           giveni={B\bibinitperiod}}}%
+        {{hash=aa6e65cd6932f53db466e337a1cb6760}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Austin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0101a428978c8ddc038880b7a77afd98}{%
+           family={Gidney},
+           familyi={G\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ad64cecce98f1d14ae82dabfcaf7db86}{%
+           family={Giustina},
+           familyi={G\bibinitperiod},
+           given={Marissa},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8f816bc12e277c2a230aaab32148cef6}{%
+           family={Graff},
+           familyi={G\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ffd6b1344764207fb5b1cedb2b502a25}{%
+           family={Guerin},
+           familyi={G\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ac01d23b67bf69493082451323481b4c}{%
+           family={Habegger},
+           familyi={H\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fdafe36c75ea60b5e9310e5a98907464}{%
+           family={Harrigan},
+           familyi={H\bibinitperiod},
+           given={Matthew\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d7ea6046bc62277e6e2c5fe7d61e78df}{%
+           family={Hartmann},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7a9ef4b5db5d57071194cc11995a6499}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5f670721dca24ae1337011719914a64c}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=33dfa81b00ac11936ef381208950305d}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Trent},
+           giveni={T\bibinitperiod}}}%
+        {{hash=963b22ba5e47cd073c7fc1a754ab2a55}{%
+           family={Humble},
+           familyi={H\bibinitperiod},
+           given={Travis\bibnamedelima S.},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=5b1bc1fc6c73555d5af1db48cdbef9af}{%
+           family={Isakov},
+           familyi={I\bibinitperiod},
+           given={Sergei\bibnamedelima V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9900c4e96164131afb8af307845df9b8}{%
+           family={Jeffrey},
+           familyi={J\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=67db50e40049bac70a6d264e681d86de}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Zhang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d2351f128f45cc307e110f1bf030fa0d}{%
+           family={Kafri},
+           familyi={K\bibinitperiod},
+           given={Dvir},
+           giveni={D\bibinitperiod}}}%
+        {{hash=399f6f0649872eb96c7b5d2253ac1654}{%
+           family={Kechedzhi},
+           familyi={K\bibinitperiod},
+           given={Kostyantyn},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6a2991ec48fc939b711eac2466cbcc68}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cbc1620351ea65d57c28a39c84b1ac30}{%
+           family={Klimov},
+           familyi={K\bibinitperiod},
+           given={Paul\bibnamedelima V.},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=84fa8eaf8054b75340e704427e2e7414}{%
+           family={Knysh},
+           familyi={K\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2290dc7590a4c730593624b7a1fdc40f}{%
+           family={Korotkov},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a7bde64895d0208e927e79c2755b9a83}{%
+           family={Kostritsa},
+           familyi={K\bibinitperiod},
+           given={Fedor},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0106e3d3d8629adc0639fb0388e51a73}{%
+           family={Landhuis},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1660c9b8c16952a4ec028c87eef3abc7}{%
+           family={Lindmark},
+           familyi={L\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1ca86a6dfd219877ce431f01a165a869}{%
+           family={Lucero},
+           familyi={L\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=22d2522f63c4d1770eed3debd45fd8fa}{%
+           family={Lyakh},
+           familyi={L\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3f2ddf64c1ea271a8a2634bbbb68d254}{%
+           family={Mandrà},
+           familyi={M\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a253ddc1c4c24cde70238bd45dc9aeff}{%
+           family={{McClean}},
+           familyi={M\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7336ef3ca1b8bfadc8b89b8c7c59577b}{%
+           family={{McEwen}},
+           familyi={M\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1c6ec14427d690fa73b3021943d5439b}{%
+           family={Megrant},
+           familyi={M\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9b445b45607e1e8e0672105779ea626b}{%
+           family={Mi},
+           familyi={M\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2338ed7a6906bd7cfdac98c5e56e45b6}{%
+           family={Michielsen},
+           familyi={M\bibinitperiod},
+           given={Kristel},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3660f6bf9d4821aa4c362d0abd316e4f}{%
+           family={Mohseni},
+           familyi={M\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5f06874711ade5e9c75656666220f803}{%
+           family={Mutus},
+           familyi={M\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4bda703a11fed621732b26896f391e85}{%
+           family={Naaman},
+           familyi={N\bibinitperiod},
+           given={Ofer},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6bcda02c5188bf25bad1475b8f30cecd}{%
+           family={Neeley},
+           familyi={N\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7e6d8fe85e636af42fba1f9d583e70e9}{%
+           family={Neill},
+           familyi={N\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ed18aa264c8650c491f53d6dc4118292}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Murphy\bibnamedelima Yuezhen},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=2d89c5708f0f2aa0a4f4358d53bfc901}{%
+           family={Ostby},
+           familyi={O\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b3e0589d3dfc4ccb2c20d9bae908ad5c}{%
+           family={Petukhov},
+           familyi={P\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b18cccf0f11300769fc4b01f5fe5f13a}{%
+           family={Platt},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d7e98df2b678f196d4696b116fb5edb6}{%
+           family={Quintana},
+           familyi={Q\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8ebda72545842e8ca358df12fd00edc6}{%
+           family={Rieffel},
+           familyi={R\bibinitperiod},
+           given={Eleanor\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=ab67b0d3986106680d464532f25dc939}{%
+           family={Roushan},
+           familyi={R\bibinitperiod},
+           given={Pedram},
+           giveni={P\bibinitperiod}}}%
+        {{hash=79a0c3f2d2ac6a6e26b1e6e488c3b198}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Nicholas\bibnamedelima C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9c196f976101682c061efc0614f70fa6}{%
+           family={Sank},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=640413903b4eab5258544e70c464cf91}{%
+           family={Satzinger},
+           familyi={S\bibinitperiod},
+           given={Kevin\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=087a4bb34bd0827f9235dede4eff2970}{%
+           family={Smelyanskiy},
+           familyi={S\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a912a72b8de08532c080010f87041bda}{%
+           family={Sung},
+           familyi={S\bibinitperiod},
+           given={Kevin\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=edb9b45c05af268e690b431177e285bb}{%
+           family={Trevithick},
+           familyi={T\bibinitperiod},
+           given={Matthew\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=8c9c62d63da654e3e637727ef0ada9e9}{%
+           family={Vainsencher},
+           familyi={V\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b483aa193391113d1234b6ae181e0dca}{%
+           family={Villalonga},
+           familyi={V\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=da61f207bd110c14a1e7e8fe213f33eb}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Theodore},
+           giveni={T\bibinitperiod}}}%
+        {{hash=473d08a31ed9fbf52d5baf436b7a809a}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Z.\bibnamedelimi Jamie},
+           giveni={Z\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e94b0ed312e1e2edcfe8a1b6bd1749d8}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e6df2c969e6e639ddd23909ad813034d}{%
+           family={Zalcman},
+           familyi={Z\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ddcc46c5456340da59be4077c7102a27}{%
+           family={Neven},
+           familyi={N\bibinitperiod},
+           given={Hartmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=25ae3182aa7d65d6b2ce4baea1970309}{%
+           family={Martinis},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5ee69b81bc21fd247bbaf0f432158b6}
+      \strng{fullhash}{9ed5ca9a711651574caed94b21c9e439}
+      \strng{bibnamehash}{b5ee69b81bc21fd247bbaf0f432158b6}
+      \strng{authorbibnamehash}{b5ee69b81bc21fd247bbaf0f432158b6}
+      \strng{authornamehash}{b5ee69b81bc21fd247bbaf0f432158b6}
+      \strng{authorfullhash}{9ed5ca9a711651574caed94b21c9e439}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The promise of quantum computers is that certain computational tasks might be executed exponentially faster on a quantum processor than on a classical processor1. A fundamental challenge is to build a high-fidelity processor capable of running quantum algorithms in an exponentially large computational space. Here we report the use of a processor with programmable superconducting qubits2–7 to create quantum states on 53 qubits, corresponding to a computational state-space of dimension 253 (about 1016). Measurements from repeated experiments sample the resulting probability distribution, which we verify using classical simulations. Our Sycamore processor takes about 200 seconds to sample one instance of a quantum circuit a million times—our benchmarks currently indicate that the equivalent task for a state-of-the-art classical supercomputer would take approximately 10,000 years. This dramatic increase in speed compared to all known classical algorithms is an experimental realization of quantum supremacy8–14 for this specific computational task, heralding a much-anticipated computing paradigm.}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{note}{Number: 7779 Publisher: Nature Publishing Group}
+      \field{number}{7779}
+      \field{title}{Quantum supremacy using a programmable superconducting processor}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{volume}{574}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{505\bibrangedash 510}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-019-1666-5
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\brise\\Zotero\\storage\\DGJWQN97\\Arute et al. - 2019 - Quantum supremacy using a programmable superconduc.pdf:application/pdf;Snapshot:C\:\\Users\\brise\\Zotero\\storage\\A46YN22Q\\s41586-019-1666-5.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41586-019-1666-5
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41586-019-1666-5
+      \endverb
+    \endentry
+    \entry{chen_xgboost_2020}{software}{}
+      \name{author}{16}{}{%
+        {{hash=48461ccdf50ba5a54e29a354aa734c0b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Tianqi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=399cf1aabecf0867957b50a0628a019a}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Tong},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9c63aa70433d165d24d07f6c715d0352}{%
+           family={Benesty},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3e8410ade8492482d690da62434787f5}{%
+           family={Khotilovich},
+           familyi={K\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+        {{hash=cee39f71272fa2c9f004d3adbc43dc73}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=65d58781ba579fe32c0e92e20df1d840}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Hyunsu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bce0b19313ad52ecf40d2a0a7c617b31}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kailong},
+           giveni={K\bibinitperiod}}}%
+        {{hash=43c9f4ab91b642db14a78d533a61184b}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Rory},
+           giveni={R\bibinitperiod}}}%
+        {{hash=49ce7befb32d2db3ef64cb4f12dc1b05}{%
+           family={Cano},
+           familyi={C\bibinitperiod},
+           given={Ignacio},
+           giveni={I\bibinitperiod}}}%
+        {{hash=dc84af730bfa0a75783610aaff4f9e65}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Tianyi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c4a02f87e51fc72ab3f841de1a3982a7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Mu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ece164ebb1f6ce9fea9dcf065b89ac93}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Junyuan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d2827b813d1d73df44360201e3296bea}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b360a5dbaa7ee7aab1704343f12f6edb}{%
+           family={Geng},
+           familyi={G\bibinitperiod},
+           given={Yifeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3f1575cc0543a21f7c6e001ff8089105}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yutian},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8a0ccc3b7fa829b85006a8bf6892608a}{%
+           family={implementation)},
+           familyi={i\bibinitperiod},
+           given={{XGBoost} contributors (base~{XGBoost}},
+           giveni={X\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a1b902110b26e322484f62946cb7718}
+      \strng{fullhash}{c9e3960dbc74a52ad839039e98644bc1}
+      \strng{bibnamehash}{4a1b902110b26e322484f62946cb7718}
+      \strng{authorbibnamehash}{4a1b902110b26e322484f62946cb7718}
+      \strng{authornamehash}{4a1b902110b26e322484f62946cb7718}
+      \strng{authorfullhash}{c9e3960dbc74a52ad839039e98644bc1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Extreme Gradient Boosting, which is an efficient implementation of the gradient boosting framework from Chen \& Guestrin (2016) {<}doi:10.1145/2939672.2939785{>}. This package is its R interface. The package includes efficient linear model solver and tree learning algorithms. The package can automatically do parallel computation on a single machine which could be more than 10 times faster than existing gradient boosting packages. It supports various objective functions, including regression, classification and ranking. The package is made to be extensible, so that users are also allowed to define their own objectives easily.}
+      \field{day}{2}
+      \field{month}{9}
+      \field{shorttitle}{xgboost}
+      \field{title}{xgboost: Extreme Gradient Boosting}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{version}{1.2.0.1}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=xgboost
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=xgboost
+      \endverb
+      \keyw{{HighPerformanceComputing},{MachineLearning},{ModelDeployment},{RPackage}}
+    \endentry
+    \entry{hamidieh_data-driven_2018}{article}{}
+      \name{author}{1}{}{%
+        {{hash=730f52ccf63aacdf126637cbf4ebf8f8}{%
+           family={Hamidieh},
+           familyi={H\bibinitperiod},
+           given={Kam},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{730f52ccf63aacdf126637cbf4ebf8f8}
+      \strng{fullhash}{730f52ccf63aacdf126637cbf4ebf8f8}
+      \strng{bibnamehash}{730f52ccf63aacdf126637cbf4ebf8f8}
+      \strng{authorbibnamehash}{730f52ccf63aacdf126637cbf4ebf8f8}
+      \strng{authornamehash}{730f52ccf63aacdf126637cbf4ebf8f8}
+      \strng{authorfullhash}{730f52ccf63aacdf126637cbf4ebf8f8}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09270256}
+      \field{journaltitle}{Computational Materials Science}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{shortjournal}{Computational Materials Science}
+      \field{title}{A data-driven statistical model for predicting the critical temperature of a superconductor}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{volume}{154}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{346\bibrangedash 354}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.commatsci.2018.07.052
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0927025618304877
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0927025618304877
+      \endverb
+      \keyw{Data\_Viz\_Final}
+    \endentry
+    \entry{owolabi_estimation_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8e7b705d0991607c46798b266ac4a8b7}{%
+           family={Owolabi},
+           familyi={O\bibinitperiod},
+           given={Taoreed\bibnamedelima O.},
+           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=49886c8597bbfa6c3a8f1aff39527100}{%
+           family={Akande},
+           familyi={A\bibinitperiod},
+           given={Kabiru\bibnamedelima O.},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=12719c5e8d3346bb70539e31ae13a5fb}{%
+           family={Olatunji},
+           familyi={O\bibinitperiod},
+           given={Sunday\bibnamedelima O.},
+           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f57352a95c961331f4092fe88e7bba51}
+      \strng{fullhash}{f57352a95c961331f4092fe88e7bba51}
+      \strng{bibnamehash}{f57352a95c961331f4092fe88e7bba51}
+      \strng{authorbibnamehash}{f57352a95c961331f4092fe88e7bba51}
+      \strng{authornamehash}{f57352a95c961331f4092fe88e7bba51}
+      \strng{authorfullhash}{f57352a95c961331f4092fe88e7bba51}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Distortions in lattice parameters of {MgB}2 superconductor occur when dopants are introduced into the crystal lattice structure which finally affects its superconducting transition temperature ({TC}). We hereby developed a superconducting transition temperature estimator ({STTE}) that is capable of estimating the {TC} of superconductors of the doped {MgB}2 systems using crystal lattice parameters obtained when dopants are introduced into the crystal structure as descriptors. The model ({STTE}) was developed with the aid of support vector regression via test-set cross-validation technique using twenty datasets. The developed model was used to estimate the {TC} of forty different superconductors of doped {MgB}2 system, and the obtained values agree well with the experimental data. The predictive ability of the developed model to directly link the lattice parameters of doped {MgB}2 superconductors to {TC} is advantageous for quick estimation of {TC} of ideal superconductors of the doped {MgB}2 system without any sophisticated equipment.}
+      \field{day}{1}
+      \field{issn}{1557-1947}
+      \field{journaltitle}{Journal of Superconductivity and Novel Magnetism}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{J Supercond Nov Magn}
+      \field{title}{Estimation of Superconducting Transition Temperature {TC} for Superconductors of the Doped {MgB}2 System from the Crystal Lattice Parameters Using Support Vector Regression}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{volume}{28}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{75\bibrangedash 81}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1007/s10948-014-2891-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10948-014-2891-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10948-014-2891-7
+      \endverb
+    \endentry
+    \entry{stanev_machine_2018}{article}{}
+      \name{author}{7}{}{%
+        {{hash=f06f2766bc0cb745e2c8c212defea564}{%
+           family={Stanev},
+           familyi={S\bibinitperiod},
+           given={Valentin},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c155a0e8a8f2a6001f0e5f8cfd8fd491}{%
+           family={Oses},
+           familyi={O\bibinitperiod},
+           given={Corey},
+           giveni={C\bibinitperiod}}}%
+        {{hash=15e45a1a07182b18a4f431192f97f027}{%
+           family={Kusne},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi Gilad},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=92acb30037fc7a3138db95cd6b2fbfe0}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Efrain},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4cd7d3688caa4db79f20997b036b9ddc}{%
+           family={Paglione},
+           familyi={P\bibinitperiod},
+           given={Johnpierre},
+           giveni={J\bibinitperiod}}}%
+        {{hash=13832574ef78b83bfc14d11bf4c35ff0}{%
+           family={Curtarolo},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=aeeb12d039b7ec9cacf3b7836a979fdd}{%
+           family={Takeuchi},
+           familyi={T\bibinitperiod},
+           given={Ichiro},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{70b2d609fafb2a12266cfd0b2e23054c}
+      \strng{fullhash}{f11a041250f11c19dedb55b66225f242}
+      \strng{bibnamehash}{70b2d609fafb2a12266cfd0b2e23054c}
+      \strng{authorbibnamehash}{70b2d609fafb2a12266cfd0b2e23054c}
+      \strng{authornamehash}{70b2d609fafb2a12266cfd0b2e23054c}
+      \strng{authorfullhash}{f11a041250f11c19dedb55b66225f242}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Superconductivity has been the focus of enormous research effort since its discovery more than a century ago. Yet, some features of this unique phenomenon remain poorly understood; prime among these is the connection between superconductivity and chemical/structural properties of materials. To bridge the gap, several machine learning schemes are developed herein to model the critical temperatures (\$T\_\{{\textbackslash}mathrm\{c\}\}\$) of the 12,000+ known superconductors available via the {SuperCon} database. Materials are first divided into two classes based on their \$T\_\{{\textbackslash}mathrm\{c\}\}\$ values, above and below 10 K, and a classification model predicting this label is trained. The model uses coarse-grained features based only on the chemical compositions. It shows strong predictive power, with out-of-sample accuracy of about 92\%. Separate regression models are developed to predict the values of \$T\_\{{\textbackslash}mathrm\{c\}\}\$ for cuprate, iron-based, and "low-\$T\_\{{\textbackslash}mathrm\{c\}\}\$" compounds. These models also demonstrate good performance, with learned predictors offering potential insights into the mechanisms behind superconductivity in different families of materials. To improve the accuracy and interpretability of these models, new features are incorporated using materials data from the {AFLOW} Online Repositories. Finally, the classification and regression models are combined into a single integrated pipeline and employed to search the entire Inorganic Crystallographic Structure Database ({ICSD}) for potential new superconductors. We identify more than 30 non-cuprate and non-iron-based oxides as candidate materials.}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2057-3960}
+      \field{journaltitle}{npj Computational Materials}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{npj Comput Mater}
+      \field{title}{Machine learning modeling of superconducting critical temperature}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{volume}{4}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{29}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41524-018-0085-8
+      \endverb
+      \verb{eprint}
+      \verb 1709.02727
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\brise\\Zotero\\storage\\32ASWHYQ\\Stanev et al. - 2018 - Machine learning modeling of superconducting criti.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\brise\\Zotero\\storage\\PCQ45EE5\\1709.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1709.02727
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1709.02727
+      \endverb
+      \keyw{Condensed Matter - Strongly Correlated Electrons,Condensed Matter - Superconductivity,Statistics - Machine Learning}
+    \endentry
+    \entry{noauthor_superconductivity_2018}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Superconductivity Data}
+      \field{titleaddon}{{UCI} Machine Learning Repository}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://archive.ics.uci.edu/ml/datasets/Superconductivty+Data
+      \endverb
+      \verb{url}
+      \verb https://archive.ics.uci.edu/ml/datasets/Superconductivty+Data
+      \endverb
+      \keyw{Data\_Viz\_Final}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
