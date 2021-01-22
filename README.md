@@ -40,5 +40,5 @@ I conclude that XGBoost's RMSE of 9.5 as the only error metric might be misleadi
   - Makes calls to RMSE_Calculator
   - Generates file output. All output goes to output folder.
 - Data_Analysis.R
-  - Used interactively, file collects statistics from output folder and generates plots.
+  - File collects statistics from output folder and generates plots.
   - Depends on output from Get_RMSE.R, but makes no direct calls. 
