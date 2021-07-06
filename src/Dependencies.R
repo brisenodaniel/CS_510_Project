@@ -9,15 +9,14 @@ if(!require(pacman)){
   install.packages('pacman')
 }
 
-pacman::p_load(dplyr,
-               stringr,
+pacman::p_load(tidyverse,
                rlist,
                xgboost,
                Matrix,
                Metrics,
-               tidyverse,
                gridExtra,
-               cowplot)
+               cowplot,
+	             profvis)
 
 #Prepare Global Environment
 load('../Data/tc.RData')

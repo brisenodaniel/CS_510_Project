@@ -1,0 +1,2102 @@
+Enabled minor modes: Anzu Async-Bytecomp-Package Auto-Composition
+Auto-Compression Auto-Encryption Auto-Highlight-Symbol Bug-Reference-Prog
+Clean-Aindent Column-Number Cursor-Intangible Diff-Auto-Refine
+Display-Line-Numbers Editorconfig Eldoc Electric-Indent Ess-Roxy Evil
+Evil-Escape Evil-Local Evil-Surround Eyebrowse File-Name-Shadow Flymake
+Font-Lock Global-Anzu Global-Auto-Revert Global-Eldoc Global-Evil-Surround
+Global-Font-Lock Global-Hl-Line Global-Hl-Todo Global-Page-Break-Lines
+Global-Spacemacs-Leader-Override Global-Undo-Tree Global-Vi-Tilde-Fringe
+Goto-Address-Prog Helm Helm-Descbinds Helm-Flx Highlight-Numbers
+Highlight-Parentheses Hl-Todo Hs Ido-Vertical Line-Number Mouse-Wheel
+Override-Global Persp Projectile Pupo Purpose Rainbow-Delimiters Recentf
+Save-Place Savehist Shell-Dirtrack Show-Smartparens Show-Smartparens-Global
+Smartparens Spaceline-Helm Spaceline-Info Spacemacs-Leader-Override
+Transient-Mark Treemacs-Filewatch Treemacs-Follow Treemacs-Fringe-Indicator
+Treemacs-Icons-Dired Undo-Tree Vi-Tilde-Fringe Which-Key Winner Winum
+Xterm-Mouse
+
+(Information about these minor modes follows the major mode info.)
+
+ESS[R] mode defined in ‘ess-r-mode.el’:
+Major mode for editing R source.  See ‘ess-mode’ for more help.
+
+In addition to any hooks its parent mode might have run,
+this mode runs the hook ‘ess-r-mode-hook’, as the final or penultimate step
+during initialization.
+
+key             binding
+---             -------
+
+C-c             Prefix Command
+TAB             ess-indent-or-complete
+C-x             Prefix Command
+ESC             Prefix Command
+,               ess-smart-comma
+{               skeleton-pair-insert-maybe
+}               skeleton-pair-insert-maybe
+<C-return>      ess-eval-region-or-line-visibly-and-step
+<remap>         Prefix Command
+
+M--             ess-insert-assign
+M-?             ess-complete-object-name
+
+C-c C-.         ess-rutils-map
+C-c C-=         ess-cycle-assign
+
+C-x n           Prefix Command
+
+C-M-a           ess-goto-beginning-of-function-or-para
+C-M-e           ess-goto-end-of-function-or-para
+C-M-h           ess-mark-function-or-para
+C-M-j           ess-indent-new-comment-line
+M-RET           ess-use-this-dir
+C-M-q           ess-indent-exp
+C-M-x           ess-eval-region-or-function-or-paragraph
+M-j             ess-indent-new-comment-line
+
+C-c C-b         ess-eval-buffer
+C-c C-c         ess-eval-region-or-function-or-paragraph-and-step
+C-c C-d         ess-doc-map
+C-c C-e         ess-extra-map
+C-c C-f         ess-eval-function
+C-c C-j         ess-eval-line
+C-c C-k         ess-force-buffer-current
+C-c C-l         ess-load-file
+C-c C-n         ess-eval-line-visibly-and-step
+C-c C-p         ess-eval-paragraph-and-step
+C-c C-q         ess-quit
+C-c C-r         ess-eval-region
+C-c C-s         ess-switch-process
+C-c C-t         ess-dev-map
+C-c C-v         ess-display-help-on-object
+C-c C-z         ess-switch-to-inferior-or-script-buffer
+C-c ESC         Prefix Command
+C-c `           ess-show-traceback
+C-c ~           ess-show-call-stack
+C-c <C-down>    ess-eval-buffer-from-here-to-end
+C-c <C-up>      ess-eval-buffer-from-beg-to-here
+
+<remap> <yank>  ess-yank
+
+C-M-q           prog-indent-sexp
+  (that binding is currently shadowed by another mode)
+
+C-c C-. H       ess-rutils-html-docs
+C-c C-. a       ess-display-help-apropos
+C-c C-. d       ess-change-directory
+C-c C-. l       ess-r-package-list-local-packages
+C-c C-. m       ess-rutils-rm-all
+C-c C-. o       ess-rdired
+C-c C-. r       ess-r-package-list-available-packages
+C-c C-. s       ess-rutils-save-workspace
+C-c C-. u       ess-r-package-update-packages
+C-c C-. w       ess-rutils-load-workspace
+
+C-x n d         ess-narrow-to-defun-or-para
+C-x n f         ess-narrow-to-defun-or-para
+
+C-c C-t C-b     ess-bp-set-conditional
+C-c C-t C-d     ess-debug-unflag-for-debugging
+C-c C-t C-e     ess-debug-toggle-error-action
+C-c C-t C-k     ess-bp-kill-all
+C-c C-t C-l     ess-bp-set-logger
+C-c C-t C-n     ess-bp-next
+C-c C-t C-o     ess-bp-toggle-state
+C-c C-t C-p     ess-bp-previous
+C-c C-t C-s     ess-r-set-evaluation-env
+C-c C-t C-u     ess-debug-unflag-for-debugging
+C-c C-t C-w     ess-watch
+C-c C-t 0 .. C-c C-t 9          ess-electric-selection
+C-c C-t ?       ess-tracebug-show-help
+C-c C-t B       ess-bp-set-conditional
+C-c C-t I       ess-debug-goto-input-event-marker
+C-c C-t K       ess-bp-kill-all
+C-c C-t L       ess-bp-set-logger
+C-c C-t T       ess-toggle-tracebug
+C-c C-t `       ess-show-traceback
+C-c C-t b       ess-bp-set
+C-c C-t d       ess-debug-flag-for-debugging
+C-c C-t e       ess-debug-toggle-error-action
+C-c C-t i       ess-debug-goto-input-event-marker
+C-c C-t k       ess-bp-kill
+C-c C-t l       ess-r-devtools-load-package
+C-c C-t n       ess-bp-next
+C-c C-t o       ess-bp-toggle-state
+C-c C-t p       ess-bp-previous
+C-c C-t s       ess-r-set-evaluation-env
+C-c C-t u       ess-debug-unflag-for-debugging
+C-c C-t w       ess-watch
+C-c C-t ~       ess-show-call-stack
+
+C-c C-e C-d     ess-dump-object-into-edit-buffer
+C-c C-e C-e     ess-execute
+C-c C-e TAB     ess-install-library
+C-c C-e C-l     ess-load-library
+C-c C-e C-r     inferior-ess-reload
+C-c C-e C-s     ess-set-style
+C-c C-e C-t     ess-build-tags-for-directory
+C-c C-e C-w     ess-execute-screen-options
+C-c C-e /       ess-set-working-directory
+C-c C-e d       ess-dump-object-into-edit-buffer
+C-c C-e e       ess-execute
+C-c C-e i       ess-install-library
+C-c C-e l       ess-load-library
+C-c C-e r       inferior-ess-reload
+C-c C-e s       ess-set-style
+C-c C-e t       ess-build-tags-for-directory
+C-c C-e w       ess-execute-screen-options
+
+C-c C-d C-a     ess-display-help-apropos
+C-c C-d C-d     ess-display-help-on-object
+C-c C-d C-e     ess-describe-object-at-point
+C-c C-d TAB     ess-display-package-index
+C-c C-d RET     ess-manual-lookup
+C-c C-d C-o     ess-display-demos
+C-c C-d C-v     ess-display-vignettes
+C-c C-d C-w     ess-help-web-search
+C-c C-d a       ess-display-help-apropos
+C-c C-d d       ess-display-help-on-object
+C-c C-d e       ess-describe-object-at-point
+C-c C-d h       ess-display-help-on-object
+C-c C-d i       ess-display-package-index
+C-c C-d m       ess-manual-lookup
+C-c C-d o       ess-display-demos
+C-c C-d v       ess-display-vignettes
+C-c C-d w       ess-help-web-search
+
+C-c M-b         ess-eval-buffer-and-go
+C-c M-f         ess-eval-function-and-go
+C-c M-j         ess-eval-line-and-go
+C-c M-l         ess-load-file
+C-c M-p         ess-eval-paragraph-and-go
+C-c M-r         ess-eval-region-and-go
+
+
+
+Anzu minor mode (no indicator):
+minor-mode which display search information in mode-line.
+
+(fn &optional ARG)
+
+Async-Bytecomp-Package minor mode (no indicator):
+Byte compile asynchronously packages installed with package.el.
+Async compilation of packages can be controlled by
+‘async-bytecomp-allowed-packages’.
+
+(fn &optional ARG)
+
+Auto-Composition minor mode (no indicator):
+Toggle Auto Composition mode.
+With a prefix argument ARG, enable Auto Composition mode if ARG
+is positive, and disable it otherwise.  If called from Lisp,
+enable the mode if ARG is omitted or nil.
+
+When Auto Composition mode is enabled, text characters are
+automatically composed by functions registered in
+‘composition-function-table’.
+
+You can use ‘global-auto-composition-mode’ to turn on
+Auto Composition mode in all buffers (this is the default).
+
+Auto-Compression minor mode (no indicator):
+Toggle Auto Compression mode.
+With a prefix argument ARG, enable Auto Compression mode if ARG
+is positive, and disable it otherwise.  If called from Lisp,
+enable the mode if ARG is omitted or nil.
+
+Auto Compression mode is a global minor mode.  When enabled,
+compressed files are automatically uncompressed for reading, and
+compressed when writing.
+
+Auto-Encryption minor mode (no indicator):
+Toggle automatic file encryption/decryption (Auto Encryption mode).
+With a prefix argument ARG, enable Auto Encryption mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil.
+
+(fn &optional ARG)
+
+Auto-Highlight-Symbol minor mode (no indicator):
+Toggle Auto Highlight Symbol Mode
+
+Bug-Reference-Prog minor mode (no indicator):
+Like ‘bug-reference-mode’, but only buttonize in comments and strings.
+
+Clean-Aindent minor mode (no indicator):
+Activates clean auto indent for function ’newline-and-indent’ and
+back-space unindent for M-DEL (meta-backspace).
+
+clean-aindent mode is a global minor mode.
+
+1. Extension of ’newline-and-indent’ that keeps track of the last
+auto-indent operation and, if it is abandoned, would take care to
+trim down the unused white space characters.
+
+2. Simple indent, if activated, where cursor is aligned with
+indent of the lines above.
+
+3. Backspace Unindent. Extension of M-backspace. When cursor is
+in the indentation space of a line, or at the first character and
+you press M-backspace it will move the entire line to be aligned
+to the line above or any other that is with indentation smaller
+than the current.
+
+Column-Number minor mode (no indicator):
+Toggle column number display in the mode line (Column Number mode).
+With a prefix argument ARG, enable Column Number mode if ARG is
+positive, and disable it otherwise.
+
+If called from Lisp, enable the mode if ARG is omitted or nil.
+
+(fn &optional ARG)
+
+Cursor-Intangible minor mode (no indicator):
+Keep cursor outside of any ‘cursor-intangible’ text property.
+
+(fn &optional ARG)
+
+Diff-Auto-Refine minor mode (no indicator):
+Toggle automatic diff hunk highlighting (Diff Auto Refine mode).
+With a prefix argument ARG, enable Diff Auto Refine mode if ARG
+is positive, and disable it otherwise.  If called from Lisp,
+enable the mode if ARG is omitted or nil.
+
+Diff Auto Refine mode is a buffer-local minor mode used with
+‘diff-mode’.  When enabled, Emacs automatically highlights
+changes in detail as the user visits hunks.  When transitioning
+from disabled to enabled, it tries to refine the current hunk, as
+well.
+
+(fn &optional ARG)
+
+Display-Line-Numbers minor mode (no indicator):
+Toggle display of line numbers in the buffer.
+This uses ‘display-line-numbers’ internally.
+
+To change the type of line numbers displayed by default,
+customize ‘display-line-numbers-type’.  To change the type while
+the mode is on, set ‘display-line-numbers’ directly.
+
+(fn &optional ARG)
+
+Editorconfig minor mode (no indicator):
+Toggle EditorConfig feature.
+
+To disable EditorConfig in some buffers, modify
+‘editorconfig-exclude-modes’ or ‘editorconfig-exclude-regexps’.
+
+(fn &optional ARG)
+
+Eldoc minor mode (no indicator):
+Toggle echo area display of Lisp objects at point (ElDoc mode).
+With a prefix argument ARG, enable ElDoc mode if ARG is positive,
+and disable it otherwise.  If called from Lisp, enable ElDoc mode
+if ARG is omitted or nil.
+
+ElDoc mode is a buffer-local minor mode.  When enabled, the echo
+area displays information about a function or variable in the
+text where point is.  If point is on a documented variable, it
+displays the first line of that variable’s doc string.  Otherwise
+it displays the argument list of the function called in the
+expression point is on.
+
+(fn &optional ARG)
+
+Electric-Indent minor mode (no indicator):
+Toggle on-the-fly reindentation (Electric Indent mode).
+With a prefix argument ARG, enable Electric Indent mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil.
+
+When enabled, this reindents whenever the hook ‘electric-indent-functions’
+returns non-nil, or if you insert a character from ‘electric-indent-chars’.
+
+This is a global minor mode.  To toggle the mode in a single buffer,
+use ‘electric-indent-local-mode’.
+
+Ess-Roxy minor mode (no indicator):
+Minor mode for editing ROxygen documentation.
+
+Evil minor mode (no indicator):
+:around advice: ‘ad-Advice-evil-mode’
+
+Toggle Evil-Local mode in all buffers.
+With prefix ARG, enable Evil mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Evil-Local mode is enabled in all buffers where
+‘evil-initialize’ would do it.
+See ‘evil-local-mode’ for more information on Evil-Local mode.
+
+(fn &optional ARG)
+
+Evil-Escape minor mode (no indicator):
+Buffer-local minor mode to escape insert state and everything else
+with a key sequence.
+
+Evil-Local minor mode (no indicator):
+Minor mode for setting up Evil in a single buffer.
+
+(fn &optional ARG)
+
+Evil-Surround minor mode (no indicator):
+Buffer-local minor mode to emulate surround.vim.
+
+Eyebrowse minor mode (no indicator):
+Toggle ‘eyebrowse-mode’.
+This global minor mode provides a set of keybindings for
+switching window configurations.  It tries mimicking the tab
+behaviour of ‘ranger‘, a file manager.
+
+(fn &optional ARG)
+
+File-Name-Shadow minor mode (no indicator):
+Toggle file-name shadowing in minibuffers (File-Name Shadow mode).
+With a prefix argument ARG, enable File-Name Shadow mode if ARG
+is positive, and disable it otherwise.  If called from Lisp,
+enable the mode if ARG is omitted or nil.
+
+File-Name Shadow mode is a global minor mode.  When enabled, any
+part of a filename being read in the minibuffer that would be
+ignored (because the result is passed through
+‘substitute-in-file-name’) is given the properties in
+‘file-name-shadow-properties’, which can be used to make that
+portion dim, invisible, or otherwise less visually noticeable.
+
+Flymake minor mode (no indicator):
+Toggle Flymake mode on or off.
+With a prefix argument ARG, enable Flymake mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil, and toggle it if ARG is ‘toggle’.
+
+Flymake is an Emacs minor mode for on-the-fly syntax checking.
+Flymake collects diagnostic information from multiple sources,
+called backends, and visually annotates the buffer with the
+results.
+
+Flymake performs these checks while the user is editing.  The
+customization variables ‘flymake-start-on-flymake-mode’,
+‘flymake-no-changes-timeout’ and
+‘flymake-start-syntax-check-on-newline’ determine the exact
+circumstances whereupon Flymake decides to initiate a check of
+the buffer.
+
+The commands ‘flymake-goto-next-error’ and
+‘flymake-goto-prev-error’ can be used to navigate among Flymake
+diagnostics annotated in the buffer.
+
+The visual appearance of each type of diagnostic can be changed
+in the variable ‘flymake-diagnostic-types-alist’.
+
+Activation or deactivation of backends used by Flymake in each
+buffer happens via the special hook
+‘flymake-diagnostic-functions’.
+
+Some backends may take longer than others to respond or complete,
+and some may decide to disable themselves if they are not
+suitable for the current buffer. The commands
+‘flymake-running-backends’, ‘flymake-disabled-backends’ and
+‘flymake-reporting-backends’ summarize the situation, as does the
+special *Flymake log* buffer.
+
+(fn &optional ARG)
+
+Font-Lock minor mode (no indicator):
+Toggle syntax highlighting in this buffer (Font Lock mode).
+With a prefix argument ARG, enable Font Lock mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil.
+
+When Font Lock mode is enabled, text is fontified as you type it:
+
+ - Comments are displayed in ‘font-lock-comment-face’;
+ - Strings are displayed in ‘font-lock-string-face’;
+ - Certain other expressions are displayed in other faces
+   according to the value of the variable ‘font-lock-keywords’.
+
+To customize the faces (colors, fonts, etc.) used by Font Lock for
+fontifying different parts of buffer text, use M-x customize-face.
+
+You can enable Font Lock mode in any major mode automatically by
+turning on in the major mode’s hook.  For example, put in your
+~/.emacs:
+
+ (add-hook 'c-mode-hook 'turn-on-font-lock)
+
+Alternatively, you can use Global Font Lock mode to automagically
+turn on Font Lock mode in buffers whose major mode supports it
+and whose major mode is one of ‘font-lock-global-modes’.  For
+example, put in your ~/.emacs:
+
+ (global-font-lock-mode t)
+
+Where major modes support different levels of fontification, you
+can use the variable ‘font-lock-maximum-decoration’ to specify
+which level you generally prefer.  When you turn Font Lock mode
+on/off the buffer is fontified/defontified, though fontification
+occurs only if the buffer is less than ‘font-lock-maximum-size’.
+
+To add your own highlighting for some major mode, and modify the
+highlighting selected automatically via the variable
+‘font-lock-maximum-decoration’, you can use
+‘font-lock-add-keywords’.
+
+To fontify a buffer, without turning on Font Lock mode and
+regardless of buffer size, you can use M-x font-lock-fontify-buffer.
+
+To fontify a block (the function or paragraph containing point,
+or a number of lines around point), perhaps because modification
+on the current line caused syntactic change on other lines, you
+can use M-o M-o.
+
+You can set your own default settings for some mode, by setting a
+buffer local value for ‘font-lock-defaults’, via its mode hook.
+
+The above is the default behavior of ‘font-lock-mode’; you may
+specify your own function which is called when ‘font-lock-mode’
+is toggled via ‘font-lock-function’. 
+
+Global-Anzu minor mode (no indicator):
+Toggle Anzu mode in all buffers.
+With prefix ARG, enable Global Anzu mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Anzu mode is enabled in all buffers where
+‘anzu--turn-on’ would do it.
+See ‘anzu-mode’ for more information on Anzu mode.
+
+(fn &optional ARG)
+
+Global-Auto-Revert minor mode (no indicator):
+Toggle Global Auto-Revert Mode.
+With a prefix argument ARG, enable Global Auto-Revert Mode if ARG
+is positive, and disable it otherwise.  If called from Lisp,
+enable the mode if ARG is omitted or nil.
+
+Global Auto-Revert Mode is a global minor mode that reverts any
+buffer associated with a file when the file changes on disk.  Use
+‘auto-revert-mode’ to revert a particular buffer.
+
+If ‘global-auto-revert-non-file-buffers’ is non-nil, this mode
+may also revert some non-file buffers, as described in the
+documentation of that variable.  It ignores buffers with modes
+matching ‘global-auto-revert-ignore-modes’, and buffers with a
+non-nil value of ‘global-auto-revert-ignore-buffer’.
+
+When a buffer is reverted, a message is generated.  This can be
+suppressed by setting ‘auto-revert-verbose’ to nil.
+
+This function calls the hook ‘global-auto-revert-mode-hook’.
+It displays the text that ‘global-auto-revert-mode-text’
+specifies in the mode line.
+
+(fn &optional ARG)
+
+Global-Eldoc minor mode (no indicator):
+Toggle Eldoc mode in all buffers.
+With prefix ARG, enable Global Eldoc mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Eldoc mode is enabled in all buffers where
+‘turn-on-eldoc-mode’ would do it.
+See ‘eldoc-mode’ for more information on Eldoc mode.
+
+(fn &optional ARG)
+
+Global-Evil-Surround minor mode (no indicator):
+Toggle Evil-Surround mode in all buffers.
+With prefix ARG, enable Global Evil-Surround mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Evil-Surround mode is enabled in all buffers where
+‘turn-on-evil-surround-mode’ would do it.
+See ‘evil-surround-mode’ for more information on Evil-Surround mode.
+
+Global-Font-Lock minor mode (no indicator):
+Toggle Font-Lock mode in all buffers.
+With prefix ARG, enable Global Font-Lock mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Font-Lock mode is enabled in all buffers where
+‘turn-on-font-lock-if-desired’ would do it.
+See ‘font-lock-mode’ for more information on Font-Lock mode.
+
+Global-Hl-Line minor mode (no indicator):
+Toggle line highlighting in all buffers (Global Hl-Line mode).
+With a prefix argument ARG, enable Global Hl-Line mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil.
+
+If ‘global-hl-line-sticky-flag’ is non-nil, Global Hl-Line mode
+highlights the line about the current buffer’s point in all live
+windows.
+
+Global-Hl-Line mode uses the functions ‘global-hl-line-highlight’
+and ‘global-hl-line-maybe-unhighlight’ on ‘post-command-hook’.
+
+(fn &optional ARG)
+
+Global-Hl-Todo minor mode (no indicator):
+Toggle Hl-Todo mode in all buffers.
+With prefix ARG, enable Global Hl-Todo mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Hl-Todo mode is enabled in all buffers where
+‘hl-todo--turn-on-mode-if-desired’ would do it.
+See ‘hl-todo-mode’ for more information on Hl-Todo mode.
+
+(fn &optional ARG)
+
+Global-Page-Break-Lines minor mode (no indicator):
+Toggle Page-Break-Lines mode in all buffers.
+With prefix ARG, enable Global Page-Break-Lines mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Page-Break-Lines mode is enabled in all buffers where
+‘page-break-lines-mode-maybe’ would do it.
+See ‘page-break-lines-mode’ for more information on Page-Break-Lines mode.
+
+Global-Spacemacs-Leader-Override minor mode (no indicator):
+Toggle Spacemacs-Leader-Override mode in all buffers.
+With prefix ARG, enable Global Spacemacs-Leader-Override mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Spacemacs-Leader-Override mode is enabled in all buffers where
+‘turn-on-spacemacs-leader-override-mode’ would do it.
+See ‘spacemacs-leader-override-mode’ for more information on Spacemacs-Leader-Override mode.
+
+Global-Undo-Tree minor mode (no indicator):
+Toggle Undo-Tree mode in all buffers.
+With prefix ARG, enable Global Undo-Tree mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Undo-Tree mode is enabled in all buffers where
+‘turn-on-undo-tree-mode’ would do it.
+See ‘undo-tree-mode’ for more information on Undo-Tree mode.
+
+(fn &optional ARG)
+
+Global-Vi-Tilde-Fringe minor mode (no indicator):
+Toggle Vi-Tilde-Fringe mode in all buffers.
+With prefix ARG, enable Global Vi-Tilde-Fringe mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Vi-Tilde-Fringe mode is enabled in all buffers where
+‘vi-tilde-fringe-mode--turn-on’ would do it.
+See ‘vi-tilde-fringe-mode’ for more information on Vi-Tilde-Fringe mode.
+
+Goto-Address-Prog minor mode (no indicator):
+Like ‘goto-address-mode’, but only for comments and strings.
+
+Helm minor mode (no indicator):
+Toggle generic helm completion.
+
+All functions in Emacs that use ‘completing-read’,
+‘read-file-name’, ‘completion-in-region’ and friends will use helm
+interface when this mode is turned on.
+
+However you can modify this behavior for functions of your choice
+with ‘helm-completing-read-handlers-alist’.
+
+Called with a positive arg, turn on unconditionally, with a
+negative arg turn off.
+You can toggle it with M-x ‘helm-mode’.
+
+About ‘ido-mode’:
+DO NOT enable ‘ido-everywhere’ when using ‘helm-mode’.  Instead of
+using ‘ido-mode’, add the commands where you want to use ido to
+‘helm-completing-read-handlers-alist’ with ‘ido’ as value.
+
+Note: This mode is incompatible with Emacs23.
+
+(fn &optional ARG)
+
+Helm-Descbinds minor mode (no indicator):
+Use ‘helm’ for ‘describe-bindings’.
+
+(fn &optional ARG)
+
+Helm-Flx minor mode (no indicator):
+helm-flx minor mode
+
+(fn &optional ARG)
+
+Highlight-Numbers minor mode (no indicator):
+Minor mode for highlighting numeric literals in source code.
+
+Toggle Highlight Numbers mode on or off.
+
+With a prefix argument ARG, enable Highlight Numbers mode if ARG is
+positive, and disable it otherwise. If called from Lisp, enable
+the mode if ARG is omitted or nil, and toggle it if ARG is ‘toggle’.
+
+(fn &optional ARG)
+
+Highlight-Parentheses minor mode (no indicator):
+Minor mode to highlight the surrounding parentheses.
+
+(fn &optional ARG)
+
+Hl-Todo minor mode (no indicator):
+Highlight TODO and similar keywords in comments and strings.
+
+(fn &optional ARG)
+
+Hs minor mode (no indicator):
+Minor mode to selectively hide/show code and comment blocks.
+With a prefix argument ARG, enable the mode if ARG is positive,
+and disable it otherwise.  If called from Lisp, enable the mode
+if ARG is omitted or nil.
+
+When hideshow minor mode is on, the menu bar is augmented with hideshow
+commands and the hideshow commands are enabled.
+The value (hs . t) is added to ‘buffer-invisibility-spec’.
+
+The main commands are: ‘hs-hide-all’, ‘hs-show-all’, ‘hs-hide-block’,
+‘hs-show-block’, ‘hs-hide-level’ and ‘hs-toggle-hiding’.  There is also
+‘hs-hide-initial-comment-block’ and ‘hs-mouse-toggle-hiding’.
+
+Turning hideshow minor mode off reverts the menu bar and the
+variables to default values and disables the hideshow commands.
+
+Lastly, the normal hook ‘hs-minor-mode-hook’ is run using ‘run-hooks’.
+
+Key bindings:
+key             binding
+---             -------
+
+C-c             Prefix Command
+<S-mouse-2>     hs-mouse-toggle-hiding
+
+C-c @           Prefix Command
+
+C-c @ C-a       hs-show-all
+C-c @ C-c       hs-toggle-hiding
+C-c @ C-d       hs-hide-block
+C-c @ C-e       hs-toggle-hiding
+C-c @ C-h       hs-hide-block
+C-c @ C-l       hs-hide-level
+C-c @ C-s       hs-show-block
+C-c @ C-t       hs-hide-all
+C-c @ ESC       Prefix Command
+
+C-c @ C-M-h     hs-hide-all
+C-c @ C-M-s     hs-show-all
+
+
+
+Ido-Vertical minor mode (no indicator):
+Makes ido-mode display vertically.
+
+Line-Number minor mode (no indicator):
+Toggle line number display in the mode line (Line Number mode).
+With a prefix argument ARG, enable Line Number mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil.
+
+Line numbers do not appear for very large buffers and buffers
+with very long lines; see variables ‘line-number-display-limit’
+and ‘line-number-display-limit-width’.
+
+(fn &optional ARG)
+
+Mouse-Wheel minor mode (no indicator):
+Toggle mouse wheel support (Mouse Wheel mode).
+With a prefix argument ARG, enable Mouse Wheel mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil.
+
+Override-Global minor mode (no indicator):
+A minor mode so that keymap settings override other modes.
+
+Persp minor mode (no indicator):
+Toggle the persp-mode.
+When active, keeps track of multiple ’perspectives’,
+named collections of buffers and window configurations.
+Here is a keymap of this minor mode:
+key             binding
+---             -------
+
+C-c             Prefix Command
+
+C-c p           persp-key-map
+
+C-c p C         persp-kill
+C-c p I         persp-import-win-conf
+C-c p K         persp-kill-buffer
+C-c p L         persp-load-from-file-by-names
+C-c p S         persp-window-switch
+C-c p W         persp-save-to-file-by-names
+C-c p a         persp-add-buffer
+C-c p b         persp-switch-to-buffer
+C-c p c         persp-copy
+C-c p i         persp-import-buffers
+C-c p k         persp-remove-buffer
+C-c p l         persp-load-state-from-file
+C-c p n         persp-next
+C-c p o         ??
+C-c p p         persp-prev
+C-c p r         persp-rename
+C-c p s         persp-frame-switch
+C-c p t         persp-temporarily-display-buffer
+C-c p w         persp-save-state-to-file
+C-c p z         persp-save-and-kill
+
+
+
+(fn &optional ARG)
+
+Projectile minor mode (no indicator):
+Minor mode to assist project management and navigation.
+
+When called interactively, toggle ‘projectile-mode’.  With prefix
+ARG, enable ‘projectile-mode’ if ARG is positive, otherwise disable
+it.
+
+When called from Lisp, enable ‘projectile-mode’ if ARG is omitted,
+nil or positive.  If ARG is ‘toggle’, toggle ‘projectile-mode’.
+Otherwise behave as if called interactively.
+
+key             binding
+---             -------
+
+
+
+(fn &optional ARG)
+
+Pupo minor mode (no indicator):
+Minor mode for combining ‘purpose-mode’ and ‘popwin-mode’.
+
+Purpose minor mode (no indicator):
+Toggle Purpose mode on or off.
+With a prefix argument ARG, enable Purpose mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil, and toggle it if ARG is ‘toggle’.
+key             binding
+---             -------
+
+
+
+(fn &optional ARG)
+
+Rainbow-Delimiters minor mode (no indicator):
+Highlight nested parentheses, brackets, and braces according to their depth.
+
+(fn &optional ARG)
+
+Recentf minor mode (no indicator):
+Toggle "Open Recent" menu (Recentf mode).
+With a prefix argument ARG, enable Recentf mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+Recentf mode if ARG is omitted or nil.
+
+When Recentf mode is enabled, a "Open Recent" submenu is
+displayed in the "File" menu, containing a list of files that
+were operated on recently.
+
+Save-Place minor mode (no indicator):
+Non-nil means automatically save place in each file.
+This means when you visit a file, point goes to the last place
+where it was when you previously visited the same file.
+
+Savehist minor mode (no indicator):
+Toggle saving of minibuffer history (Savehist mode).
+With a prefix argument ARG, enable Savehist mode if ARG is
+positive, and disable it otherwise.  If called from Lisp,
+also enable the mode if ARG is omitted or nil.
+
+When Savehist mode is enabled, minibuffer history is saved
+to ‘savehist-file’ periodically and when exiting Emacs.  When
+Savehist mode is enabled for the first time in an Emacs session,
+it loads the previous minibuffer histories from ‘savehist-file’.
+The variable ‘savehist-autosave-interval’ controls the
+periodicity of saving minibuffer histories.
+
+If ‘savehist-save-minibuffer-history’ is non-nil (the default),
+all recorded minibuffer histories will be saved.  You can arrange
+for additional history variables to be saved and restored by
+customizing ‘savehist-additional-variables’, which by default is
+an empty list.  For example, to save the history of commands
+invoked via <execute>, add ‘command-history’ to the list in
+‘savehist-additional-variables’.
+
+Alternatively, you could customize ‘savehist-save-minibuffer-history’
+to nil, and add to ‘savehist-additional-variables’ only those
+history variables you want to save.
+
+To ignore some history variables, add their symbols to the list
+in ‘savehist-ignored-variables’.
+
+This mode should normally be turned on from your Emacs init file.
+Calling it at any other time replaces your current minibuffer
+histories, which is probably undesirable.
+
+Shell-Dirtrack minor mode (no indicator):
+Toggle directory tracking in this shell buffer (Shell Dirtrack mode).
+With a prefix argument ARG, enable Shell Dirtrack mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil.
+
+The ‘dirtrack’ package provides an alternative implementation of
+this feature; see the function ‘dirtrack-mode’.
+
+(fn &optional ARG)
+
+Show-Smartparens minor mode (no indicator):
+Toggle visualization of matching pairs.  When enabled, any
+matching pair is highlighted after ‘sp-show-pair-delay’ seconds
+of Emacs idle time if the point is immediately in front or after
+a pair.  This mode works similarly to ‘show-paren-mode’, but
+support custom pairs.
+
+(fn &optional ARG)
+
+Show-Smartparens-Global minor mode (no indicator):
+Toggle Show-Smartparens mode in all buffers.
+With prefix ARG, enable Show-Smartparens-Global mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Show-Smartparens mode is enabled in all buffers where
+‘turn-on-show-smartparens-mode’ would do it.
+See ‘show-smartparens-mode’ for more information on Show-Smartparens mode.
+
+(fn &optional ARG)
+
+Smartparens minor mode (indicator ⓟ):
+Toggle smartparens mode.
+
+You can enable pre-set bindings by customizing
+‘sp-base-key-bindings’ variable.  The current content of
+‘smartparens-mode-map’ is:
+
+ key             binding
+---             -------
+
+
+
+(fn &optional ARG)
+
+Spaceline-Helm minor mode (no indicator):
+Customize the mode-line in helm.
+
+Spaceline-Info minor mode (no indicator):
+Customize the mode-line in info.
+This minor mode requires info+.
+
+Spacemacs-Leader-Override minor mode (no indicator):
+Minor mode that makes spacemacs-default-map override minor mode maps. Set up by bind-map.el.
+
+Transient-Mark minor mode (no indicator):
+Toggle Transient Mark mode.
+With a prefix argument ARG, enable Transient Mark mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+Transient Mark mode if ARG is omitted or nil.
+
+Transient Mark mode is a global minor mode.  When enabled, the
+region is highlighted with the ‘region’ face whenever the mark
+is active.  The mark is "deactivated" after certain non-motion
+commands, including those that change the text in the buffer, and
+during shift or mouse selection by any unshifted cursor motion
+command (see Info node ‘Shift Selection’ for more details).
+
+You can also deactivate the mark by typing SPC w p p or
+M-ESC ESC.
+
+Many commands change their behavior when Transient Mark mode is
+in effect and the mark is active, by acting on the region instead
+of their usual default part of the buffer’s text.  Examples of
+such commands include M-;, M-x flush-lines, M-x keep-lines,
+M-%, C-M-%, M-x ispell, and C-_.
+To see the documentation of commands which are sensitive to the
+Transient Mark mode, invoke C-h d and type "transient"
+or "mark.*active" at the prompt.
+
+(fn &optional ARG)
+
+Treemacs-Filewatch minor mode (no indicator):
+Minor mode to let treemacs auto-refresh itself on file system changes.
+Activating this mode enables treemacs to watch the files it is displaying (and
+only those) for changes and automatically refresh its view when it detects a
+change that it decides is relevant.
+
+A file change event is relevant for treemacs if a new file has been created or
+deleted or a file has been changed and ‘treemacs-git-mode’ is enabled.  Events
+caused by files that are ignored as per ‘treemacs-ignored-file-predicates’ are
+counted as not relevant.
+
+The refresh is not called immediately after an event was received, treemacs
+instead waits ‘treemacs-file-event-delay’ ms to see if any more files have
+changed to avoid having to refresh multiple times over a short period of time.
+
+The watch mechanism only applies to directories opened *after* this mode has
+been activated.  This means that to enable file watching in an already existing
+treemacs buffer it needs to be torn down and rebuilt by calling ‘treemacs’ or
+‘treemacs-projectile’.
+
+Turning off this mode is, on the other hand, instantaneous - it will immediately
+turn off all existing file watch processes and outstanding refresh actions.
+
+(fn &optional ARG)
+
+Treemacs-Follow minor mode (no indicator):
+Toggle ‘treemacs-follow-mode’.
+When enabled treemacs will keep track of and focus the currently selected
+buffer’s file.  This only applies if the file is within the treemacs root
+directory.
+This functionality can also be manually invoked with ‘treemacs-find-file’.
+
+(fn &optional ARG)
+
+Treemacs-Fringe-Indicator minor mode (no indicator):
+Toggle ‘treemacs-fringe-indicator-mode’.
+When enabled, a visual indicator in the fringe will be displayed to highlight
+the selected line in addition to ‘hl-line-mode’.  Useful if ‘hl-line-mode’
+doesn’t stand out enough with your colour theme.
+
+Can be called with one of two arguments:
+
+ - ‘always’ will always show the fringe indicator.
+ - ‘only-when-focused’ will only show the fringe indicator when the treemacs
+   window is focused (only possible with Emacs 27+).
+
+For backward compatibility just enabling this mode without an explicit argument
+has the same effect as using ‘always’.
+
+(fn &optional ARG)
+
+Treemacs-Icons-Dired minor mode (no indicator):
+Display treemacs icons for each file in a dired buffer.
+
+(fn &optional ARG)
+
+Undo-Tree minor mode (no indicator):
+Toggle undo-tree mode.
+With no argument, this command toggles the mode.
+A positive prefix argument turns the mode on.
+A negative prefix argument turns it off.
+
+Undo-tree-mode replaces Emacs’ standard undo feature with a more
+powerful yet easier to use version, that treats the undo history
+as what it is: a tree.
+
+The following keys are available in ‘undo-tree-mode’:
+
+  key             binding
+---             -------
+
+C-x             Prefix Command
+ESC             Prefix Command
+C-_             undo-tree-undo
+C-/             undo-tree-undo
+C-?             undo-tree-redo
+<remap>         Prefix Command
+
+C-x r           Prefix Command
+C-x u           undo-tree-visualize
+
+M-_             undo-tree-redo
+
+<remap> <redo>  undo-tree-redo
+<remap> <undo>  undo-tree-undo
+<remap> <undo-only>             undo-tree-undo
+
+C-x r U         undo-tree-restore-state-from-register
+C-x r u         undo-tree-save-state-to-register
+
+
+
+Within the undo-tree visualizer, the following keys are available:
+
+  key             binding
+---             -------
+
+C-b             undo-tree-visualize-switch-branch-left
+C-f             undo-tree-visualize-switch-branch-right
+C-n             undo-tree-visualize-redo
+C-p             undo-tree-visualize-undo
+C-q             undo-tree-visualizer-abort
+ESC             Prefix Command
+,               undo-tree-visualizer-scroll-left
+.               undo-tree-visualizer-scroll-right
+<               undo-tree-visualizer-scroll-left
+>               undo-tree-visualizer-scroll-right
+b               undo-tree-visualize-switch-branch-left
+d               undo-tree-visualizer-toggle-diff
+f               undo-tree-visualize-switch-branch-right
+n               undo-tree-visualize-redo
+p               undo-tree-visualize-undo
+q               undo-tree-visualizer-quit
+s               undo-tree-visualizer-selection-mode
+t               undo-tree-visualizer-toggle-timestamps
+<C-down>        undo-tree-visualize-redo-to-x
+<C-up>          undo-tree-visualize-undo-to-x
+<down>          undo-tree-visualize-redo
+<evilified-state>               Prefix Command
+<left>          undo-tree-visualize-switch-branch-left
+<mouse-1>       undo-tree-visualizer-mouse-set
+<next>          undo-tree-visualizer-scroll-up
+<prior>         undo-tree-visualizer-scroll-down
+<remap>         Prefix Command
+<right>         undo-tree-visualize-switch-branch-right
+<up>            undo-tree-visualize-undo
+
+<evilified-state> C-b           evil-scroll-page-up
+<evilified-state> C-d           evil-scroll-down
+<evilified-state> C-e           evil-scroll-line-down
+<evilified-state> C-f           evil-scroll-page-down
+<evilified-state> C-n           undo-tree-visualize-redo
+<evilified-state> C-u           evil-scroll-up
+<evilified-state> C-w           evil-window-map
+<evilified-state> C-y           evil-scroll-line-up
+<evilified-state> C-z           evil-emacs-state
+<evilified-state> SPC           spacemacs-cmds
+<evilified-state> /             evil-search-forward
+<evilified-state> :             evil-ex
+<evilified-state> G             evil-goto-line
+<evilified-state> N             evil-search-previous
+<evilified-state> V             evil-visual-line
+<evilified-state> g             Prefix Command
+<evilified-state> h             undo-tree-visualize-switch-branch-left
+<evilified-state> j             undo-tree-visualize-redo
+<evilified-state> k             undo-tree-visualize-undo
+<evilified-state> l             undo-tree-visualize-switch-branch-right
+<evilified-state> n             evil-search-next
+<evilified-state> v             evil-visual-char
+<evilified-state> C-S-b         undo-tree-visualize-switch-branch-left
+<evilified-state> C-S-f         undo-tree-visualize-switch-branch-right
+<evilified-state> C-S-n         undo-tree-visualize-redo
+
+M-{             undo-tree-visualize-undo-to-x
+M-}             undo-tree-visualize-redo-to-x
+
+<remap> <backward-char>         undo-tree-visualize-switch-branch-left
+<remap> <backward-paragraph>    undo-tree-visualize-undo-to-x
+<remap> <evil-backward-char>    undo-tree-visualize-switch-branch-left
+<remap> <evil-forward-char>     undo-tree-visualize-switch-branch-right
+<remap> <evil-next-line>        undo-tree-visualize-redo
+<remap> <evil-previous-line>    undo-tree-visualize-undo
+<remap> <evil-ret>              undo-tree-visualizer-set
+<remap> <forward-char>          undo-tree-visualize-switch-branch-right
+<remap> <forward-paragraph>     undo-tree-visualize-redo-to-x
+<remap> <next-line>             undo-tree-visualize-redo
+<remap> <previous-line>         undo-tree-visualize-undo
+
+<evilified-state> C-w C-b       evil-window-bottom-right
+<evilified-state> C-w C-c       evil-window-delete
+<evilified-state> C-w C-f       ffap-other-window
+<evilified-state> C-w C-n       evil-window-new
+<evilified-state> C-w C-o       spacemacs/toggle-maximize-buffer
+<evilified-state> C-w C-p       evil-window-mru
+<evilified-state> C-w C-r       evil-window-rotate-downwards
+<evilified-state> C-w C-s       evil-window-split
+<evilified-state> C-w C-t       evil-window-top-left
+<evilified-state> C-w C-v       evil-window-vsplit
+<evilified-state> C-w C-w       evil-window-next
+<evilified-state> C-w C-_       evil-window-set-height
+<evilified-state> C-w +         evil-window-increase-height
+<evilified-state> C-w -         evil-window-decrease-height
+<evilified-state> C-w <         evil-window-decrease-width
+<evilified-state> C-w =         balance-windows
+<evilified-state> C-w >         evil-window-increase-width
+<evilified-state> C-w H         evil-window-move-far-left
+<evilified-state> C-w J         evil-window-move-very-bottom
+<evilified-state> C-w K         evil-window-move-very-top
+<evilified-state> C-w L         evil-window-move-far-right
+<evilified-state> C-w R         evil-window-rotate-upwards
+<evilified-state> C-w S         evil-window-split
+<evilified-state> C-w W         evil-window-prev
+<evilified-state> C-w _         evil-window-set-height
+<evilified-state> C-w b         evil-window-bottom-right
+<evilified-state> C-w c         evil-window-delete
+<evilified-state> C-w h         evil-window-left
+<evilified-state> C-w j         evil-window-down
+<evilified-state> C-w k         evil-window-up
+<evilified-state> C-w l         evil-window-right
+<evilified-state> C-w n         evil-window-new
+<evilified-state> C-w o         spacemacs/toggle-maximize-buffer
+<evilified-state> C-w p         evil-window-mru
+<evilified-state> C-w q         evil-quit
+<evilified-state> C-w r         evil-window-rotate-downwards
+<evilified-state> C-w s         evil-window-split
+<evilified-state> C-w t         evil-window-top-left
+<evilified-state> C-w v         evil-window-vsplit
+<evilified-state> C-w w         evil-window-next
+<evilified-state> C-w |         evil-window-set-width
+<evilified-state> C-w C-S-h     evil-window-move-far-left
+<evilified-state> C-w C-S-j     evil-window-move-very-bottom
+<evilified-state> C-w C-S-k     evil-window-move-very-top
+<evilified-state> C-w C-S-l     evil-window-move-far-right
+<evilified-state> C-w C-S-r     evil-window-rotate-upwards
+<evilified-state> C-w C-S-s     evil-window-split
+<evilified-state> C-w C-S-w     evil-window-prev
+<evilified-state> C-w <down>    evil-window-down
+<evilified-state> C-w <left>    evil-window-left
+<evilified-state> C-w <right>   evil-window-right
+<evilified-state> C-w <up>      evil-window-up
+
+<evilified-state> SPC TAB       spacemacs/alternate-buffer
+<evilified-state> SPC C-t       Prefix Command
+<evilified-state> SPC C-v       Prefix Command
+<evilified-state> SPC SPC       spacemacs/helm-M-x-fuzzy-matching
+<evilified-state> SPC !         shell-command
+<evilified-state> SPC *         spacemacs/helm-project-smart-do-search-region-or-symbol
+<evilified-state> SPC /         spacemacs/helm-project-smart-do-search
+<evilified-state> SPC 0         winum-select-window-0-or-10
+<evilified-state> SPC 1         winum-select-window-1
+<evilified-state> SPC 2         winum-select-window-2
+<evilified-state> SPC 3         winum-select-window-3
+<evilified-state> SPC 4         winum-select-window-4
+<evilified-state> SPC 5         winum-select-window-5
+<evilified-state> SPC 6         winum-select-window-6
+<evilified-state> SPC 7         winum-select-window-7
+<evilified-state> SPC 8         winum-select-window-8
+<evilified-state> SPC 9         winum-select-window-9
+<evilified-state> SPC ;         evilnc-comment-operator
+<evilified-state> SPC ?         helm-descbinds
+<evilified-state> SPC C         Prefix Command
+<evilified-state> SPC D         Prefix Command
+<evilified-state> SPC F         Prefix Command
+<evilified-state> SPC K         Prefix Command
+<evilified-state> SPC N         Prefix Command
+<evilified-state> SPC T         Prefix Command
+<evilified-state> SPC `         winum-select-window-by-number
+<evilified-state> SPC a         Prefix Command
+<evilified-state> SPC b         Prefix Command
+<evilified-state> SPC c         Prefix Command
+<evilified-state> SPC e         Prefix Command
+<evilified-state> SPC f         Prefix Command
+<evilified-state> SPC g         Prefix Command
+<evilified-state> SPC h         Prefix Command
+<evilified-state> SPC i         Prefix Command
+<evilified-state> SPC j         Prefix Command
+<evilified-state> SPC k         Prefix Command
+<evilified-state> SPC l         spacemacs/layouts-transient-state/body
+<evilified-state> SPC m         Prefix Command
+<evilified-state> SPC n         Prefix Command
+<evilified-state> SPC o         Prefix Command
+<evilified-state> SPC p         Prefix Command
+<evilified-state> SPC q         Prefix Command
+<evilified-state> SPC r         Prefix Command
+<evilified-state> SPC s         Prefix Command
+<evilified-state> SPC t         Prefix Command
+<evilified-state> SPC u         universal-argument
+<evilified-state> SPC v         er/expand-region
+<evilified-state> SPC w         Prefix Command
+<evilified-state> SPC x         Prefix Command
+<evilified-state> SPC z         Prefix Command
+<evilified-state> SPC ²         winum-select-window-by-number
+<evilified-state> SPC <f1>      lazy-helm/helm-apropos
+
+<evilified-state> g g           evil-goto-first-line
+
+<evilified-state> SPC F B       spacemacs/display-buffer-other-frame
+<evilified-state> SPC F D       delete-other-frames
+<evilified-state> SPC F O       spacemacs/dired-other-frame
+<evilified-state> SPC F b       spacemacs/switch-to-buffer-other-frame
+<evilified-state> SPC F d       delete-frame
+<evilified-state> SPC F f       spacemacs/find-file-other-frame
+<evilified-state> SPC F n       make-frame
+<evilified-state> SPC F o       other-frame
+
+<evilified-state> SPC D b       Prefix Command
+<evilified-state> SPC D d       Prefix Command
+<evilified-state> SPC D f       Prefix Command
+<evilified-state> SPC D h       ediff-documentation
+<evilified-state> SPC D m       Prefix Command
+<evilified-state> SPC D r       Prefix Command
+<evilified-state> SPC D s       ediff-show-registry
+<evilified-state> SPC D w       Prefix Command
+
+<evilified-state> SPC C-v N     rectangle-number-lines
+<evilified-state> SPC C-v c     close-rectangle
+<evilified-state> SPC C-v d     delete-rectangle
+<evilified-state> SPC C-v e     rectangle-exchange-point-and-mark
+<evilified-state> SPC C-v i     copy-rectangle-to-register
+<evilified-state> SPC C-v k     kill-rectangle
+<evilified-state> SPC C-v l     rectangle-left-char
+<evilified-state> SPC C-v m     rectangle-mark-mode
+<evilified-state> SPC C-v n     rectangle-next-line
+<evilified-state> SPC C-v o     open-rectangle
+<evilified-state> SPC C-v p     rectangle-previous-line
+<evilified-state> SPC C-v r     rectangle-right-char
+<evilified-state> SPC C-v s     string-rectangle
+<evilified-state> SPC C-v x     clear-rectangle
+<evilified-state> SPC C-v y     yank-rectangle
+
+<evilified-state> SPC K K       kmacro-end-or-call-macro
+<evilified-state> SPC K c       Prefix Command
+<evilified-state> SPC K e       Prefix Command
+<evilified-state> SPC K k       kmacro-start-macro-or-insert-counter
+<evilified-state> SPC K r       Prefix Command
+<evilified-state> SPC K v       kmacro-view-macro-repeat
+
+<evilified-state> SPC k C-r     evil-lisp-state-undo-tree-redo
+<evilified-state> SPC k C-v     evil-lisp-state-evil-visual-block
+<evilified-state> SPC k $       evil-lisp-state-sp-end-of-sexp
+<evilified-state> SPC k %       evil-lisp-state-evil-jump-item
+<evilified-state> SPC k (       evil-lisp-state-insert-sexp-before
+<evilified-state> SPC k )       evil-lisp-state-insert-sexp-after
+<evilified-state> SPC k .       lisp-state-toggle-lisp-state
+<evilified-state> SPC k 0       evil-lisp-state-beginning-of-sexp
+<evilified-state> SPC k 1 .. <evilified-state> SPC k 9
+                                evil-lisp-state-digit-argument
+<evilified-state> SPC k :       evil-lisp-state-evil-ex
+<evilified-state> SPC k B       evil-lisp-state-sp-backward-barf-sexp
+<evilified-state> SPC k D       Prefix Command
+<evilified-state> SPC k E       evil-lisp-state-sp-splice-sexp-killing-backward
+<evilified-state> SPC k H       evil-lisp-state-sp-backward-sexp
+<evilified-state> SPC k I       evil-lisp-state-evil-insert-line
+<evilified-state> SPC k J       evil-lisp-state-sp-join-sexp
+<evilified-state> SPC k L       evil-lisp-state-sp-forward-sexp
+<evilified-state> SPC k P       evil-lisp-state-evil-paste-before
+<evilified-state> SPC k S       evil-lisp-state-sp-backward-slurp-sexp
+<evilified-state> SPC k U       evil-lisp-state-sp-backward-up-sexp
+<evilified-state> SPC k V       evil-lisp-state-evil-visual-line
+<evilified-state> SPC k W       evil-lisp-state-sp-unwrap-sexp
+<evilified-state> SPC k `       Prefix Command
+<evilified-state> SPC k a       evil-lisp-state-sp-absorb-sexp
+<evilified-state> SPC k b       evil-lisp-state-sp-forward-barf-sexp
+<evilified-state> SPC k c       evil-lisp-state-sp-convolute-sexp
+<evilified-state> SPC k d       Prefix Command
+<evilified-state> SPC k e       evil-lisp-state-sp-splice-sexp-killing-forward
+<evilified-state> SPC k h       evil-lisp-state-sp-backward-symbol
+<evilified-state> SPC k i       evil-lisp-state-evil-insert-state
+<evilified-state> SPC k j       evil-lisp-state-next-closing-paren
+<evilified-state> SPC k k       evil-lisp-state-prev-opening-paren
+<evilified-state> SPC k l       evil-lisp-state-forward-symbol
+<evilified-state> SPC k p       evil-lisp-state-evil-paste-after
+<evilified-state> SPC k r       evil-lisp-state-sp-raise-sexp
+<evilified-state> SPC k s       evil-lisp-state-sp-forward-slurp-sexp
+<evilified-state> SPC k t       evil-lisp-state-sp-transpose-sexp
+<evilified-state> SPC k u       evil-lisp-state-undo-tree-undo
+<evilified-state> SPC k v       evil-lisp-state-evil-visual-char
+<evilified-state> SPC k w       evil-lisp-state-wrap
+<evilified-state> SPC k y       evil-lisp-state-sp-copy-sexp
+<evilified-state> SPC k <escape>
+                                evil-lisp-state/quit
+<evilified-state> SPC k <remap>
+                                Prefix Command
+
+<evilified-state> SPC e .       spacemacs/error-transient-state/body
+<evilified-state> SPC e N       spacemacs/previous-error
+<evilified-state> SPC e n       spacemacs/next-error
+<evilified-state> SPC e p       spacemacs/previous-error
+<evilified-state> SPC e z       spacemacs/last-error
+
+<evilified-state> SPC q D       spacemacs/restart-stock-emacs-with-packages
+<evilified-state> SPC q Q       spacemacs/kill-emacs
+<evilified-state> SPC q R       spacemacs/restart-emacs
+<evilified-state> SPC q T       spacemacs/restart-emacs-adv-timers
+<evilified-state> SPC q d       spacemacs/restart-emacs-debug-init
+<evilified-state> SPC q f       spacemacs/frame-killer
+<evilified-state> SPC q q       spacemacs/prompt-kill-emacs
+<evilified-state> SPC q r       spacemacs/restart-emacs-resume-layouts
+<evilified-state> SPC q s       spacemacs/save-buffers-kill-emacs
+<evilified-state> SPC q t       spacemacs/restart-emacs-timed-requires
+
+<evilified-state> SPC p !       projectile-run-shell-command-in-root
+<evilified-state> SPC p %       projectile-replace-regexp
+<evilified-state> SPC p &       projectile-run-async-shell-command-in-root
+<evilified-state> SPC p D       projectile-dired
+<evilified-state> SPC p F       helm-projectile-find-file-dwim
+<evilified-state> SPC p G       projectile-regenerate-tags
+<evilified-state> SPC p I       projectile-invalidate-cache
+<evilified-state> SPC p R       projectile-replace
+<evilified-state> SPC p T       projectile-test-project
+<evilified-state> SPC p a       projectile-toggle-between-implementation-and-test
+<evilified-state> SPC p b       helm-projectile-switch-to-buffer
+<evilified-state> SPC p c       projectile-compile-project
+<evilified-state> SPC p d       helm-projectile-find-dir
+<evilified-state> SPC p e       projectile-edit-dir-locals
+<evilified-state> SPC p f       helm-projectile-find-file
+<evilified-state> SPC p g       projectile-find-tag
+<evilified-state> SPC p h       helm-projectile
+<evilified-state> SPC p k       projectile-kill-buffers
+<evilified-state> SPC p l       spacemacs/helm-persp-switch-project
+<evilified-state> SPC p p       helm-projectile-switch-project
+<evilified-state> SPC p r       helm-projectile-recentf
+<evilified-state> SPC p t       spacemacs/treemacs-project-toggle
+<evilified-state> SPC p v       projectile-vc
+
+<evilified-state> SPC T F       spacemacs/toggle-fullscreen-frame
+<evilified-state> SPC T M       spacemacs/toggle-maximize-frame
+<evilified-state> SPC T N       spacemacs/theme-transient-state/spacemacs/cycle-spacemacs-theme-backward
+<evilified-state> SPC T T       spacemacs/scale-transparency-transient-state/spacemacs/toggle-transparency
+<evilified-state> SPC T Z       zone
+<evilified-state> SPC T f       spacemacs/toggle-fringe
+<evilified-state> SPC T m       spacemacs/toggle-menu-bar
+<evilified-state> SPC T n       spacemacs/theme-transient-state/spacemacs/cycle-spacemacs-theme
+<evilified-state> SPC T s       spacemacs/helm-themes
+<evilified-state> SPC T t       spacemacs/toggle-tool-bar
+<evilified-state> SPC T ~       spacemacs/toggle-vi-tilde-fringe
+
+<evilified-state> SPC g f       Prefix Command
+
+<evilified-state> SPC i J       spacemacs/insert-line-below-no-indent
+<evilified-state> SPC i K       spacemacs/insert-line-above-no-indent
+<evilified-state> SPC i U       Prefix Command
+<evilified-state> SPC i b       insert-buffer
+<evilified-state> SPC i j       spacemacs/evil-insert-line-below
+<evilified-state> SPC i k       spacemacs/evil-insert-line-above
+<evilified-state> SPC i l       Prefix Command
+<evilified-state> SPC i p       Prefix Command
+<evilified-state> SPC i u       lazy-helm/helm-ucs
+
+<evilified-state> SPC C l       lazy-helm/helm-colors
+
+<evilified-state> SPC n +       spacemacs/evil-numbers-transient-state/evil-numbers/inc-at-pt
+<evilified-state> SPC n -       spacemacs/evil-numbers-transient-state/evil-numbers/dec-at-pt
+<evilified-state> SPC n =       spacemacs/evil-numbers-transient-state/evil-numbers/inc-at-pt
+<evilified-state> SPC n F       spacemacs/narrow-to-defun-indirect-buffer
+<evilified-state> SPC n P       spacemacs/narrow-to-page-indirect-buffer
+<evilified-state> SPC n R       spacemacs/narrow-to-region-indirect-buffer
+<evilified-state> SPC n _       spacemacs/evil-numbers-transient-state/evil-numbers/dec-at-pt
+<evilified-state> SPC n f       narrow-to-defun
+<evilified-state> SPC n p       narrow-to-page
+<evilified-state> SPC n r       narrow-to-region
+<evilified-state> SPC n w       widen
+
+<evilified-state> SPC c C       compile
+<evilified-state> SPC c L       spacemacs/comment-or-uncomment-lines-inverse
+<evilified-state> SPC c N       previous-error
+<evilified-state> SPC c P       spacemacs/comment-or-uncomment-paragraphs-inverse
+<evilified-state> SPC c T       spacemacs/quick-comment-or-uncomment-to-the-line-inverse
+<evilified-state> SPC c Y       spacemacs/copy-and-comment-lines-inverse
+<evilified-state> SPC c b       spacemacs/switch-to-compilation-buffer
+<evilified-state> SPC c c       helm-make-projectile
+<evilified-state> SPC c d       spacemacs/show-hide-compilation-window
+<evilified-state> SPC c h       hide/show-comments-toggle
+<evilified-state> SPC c k       kill-compilation
+<evilified-state> SPC c l       spacemacs/comment-or-uncomment-lines
+<evilified-state> SPC c m       helm-make
+<evilified-state> SPC c n       next-error
+<evilified-state> SPC c p       spacemacs/comment-or-uncomment-paragraphs
+<evilified-state> SPC c r       recompile
+<evilified-state> SPC c t       spacemacs/quick-comment-or-uncomment-to-the-line
+<evilified-state> SPC c y       spacemacs/copy-and-comment-lines
+
+<evilified-state> SPC a '       lazy-helm/helm-available-repls
+<evilified-state> SPC a *       calc-dispatch
+<evilified-state> SPC a P       proced
+<evilified-state> SPC a Y       Prefix Command
+<evilified-state> SPC a c       Prefix Command
+<evilified-state> SPC a d       spacemacs/dired
+<evilified-state> SPC a e .. <evilified-state> SPC a f
+                                Prefix Command
+<evilified-state> SPC a k       spacemacs/paradox-list-packages
+<evilified-state> SPC a m       Prefix Command
+<evilified-state> SPC a p       list-processes
+<evilified-state> SPC a r       Prefix Command
+<evilified-state> SPC a t       Prefix Command
+<evilified-state> SPC a u       undo-tree-visualize
+<evilified-state> SPC a w       Prefix Command
+
+<evilified-state> SPC f ESC     Prefix Command
+<evilified-state> SPC f A       spacemacs/find-file-and-replace-buffer
+<evilified-state> SPC f B       treemacs-bookmark
+<evilified-state> SPC f C       Prefix Command
+<evilified-state> SPC f D       spacemacs/delete-current-buffer-file
+<evilified-state> SPC f E       spacemacs/sudo-edit
+<evilified-state> SPC f F       lazy-helm/helm-find-files
+<evilified-state> SPC f J       spacemacs/open-junk-file
+<evilified-state> SPC f L       lazy-helm/helm-locate
+<evilified-state> SPC f R       spacemacs/rename-current-buffer-file
+<evilified-state> SPC f S       evil-write-all
+<evilified-state> SPC f T       treemacs-find-file
+<evilified-state> SPC f b       helm-filtered-bookmarks
+<evilified-state> SPC f c       spacemacs/copy-file
+<evilified-state> SPC f e       Prefix Command
+<evilified-state> SPC f f       lazy-helm/spacemacs/helm-find-files
+<evilified-state> SPC f h       hexl-find-file
+<evilified-state> SPC f i       spacemacs/insert-file
+<evilified-state> SPC f j       dired-jump
+<evilified-state> SPC f l       find-file-literally
+<evilified-state> SPC f o       spacemacs/open-file-or-directory-in-external-app
+<evilified-state> SPC f r       lazy-helm/helm-recentf
+<evilified-state> SPC f s       save-buffer
+<evilified-state> SPC f t       treemacs
+<evilified-state> SPC f v       Prefix Command
+<evilified-state> SPC f y       Prefix Command
+
+<evilified-state> SPC j $       spacemacs/push-mark-and-goto-end-of-line
+<evilified-state> SPC j (       check-parens
+<evilified-state> SPC j +       spacemacs/iwb-region-or-buffer
+<evilified-state> SPC j 0       spacemacs/push-mark-and-goto-beginning-of-line
+<evilified-state> SPC j =       spacemacs/indent-region-or-buffer
+<evilified-state> SPC j D       dired-jump-other-window
+<evilified-state> SPC j I       lazy-helm/helm-imenu-in-all-buffers
+<evilified-state> SPC j S       spacemacs/split-and-new-line
+<evilified-state> SPC j U       spacemacs/avy-open-url
+<evilified-state> SPC j b       avy-pop-mark
+<evilified-state> SPC j c       goto-last-change
+<evilified-state> SPC j d       dired-jump
+<evilified-state> SPC j f       find-function
+<evilified-state> SPC j i       spacemacs/helm-jump-in-buffer
+<evilified-state> SPC j j       evil-avy-goto-char-timer
+<evilified-state> SPC j k       spacemacs/evil-goto-next-line-and-indent
+<evilified-state> SPC j l       evil-avy-goto-line
+<evilified-state> SPC j n       sp-newline
+<evilified-state> SPC j o       open-line
+<evilified-state> SPC j s       sp-split-sexp
+<evilified-state> SPC j u       spacemacs/avy-goto-url
+<evilified-state> SPC j v       find-variable
+<evilified-state> SPC j w       evil-avy-goto-word-or-subword-1
+
+<evilified-state> SPC w TAB     spacemacs/alternate-window
+<evilified-state> SPC w +       spacemacs/window-layout-toggle
+<evilified-state> SPC w -       split-window-below
+<evilified-state> SPC w .       spacemacs/window-transient-state/body
+<evilified-state> SPC w /       split-window-right
+<evilified-state> SPC w 1       spacemacs/window-split-single-column
+<evilified-state> SPC w 2       spacemacs/window-split-double-columns
+<evilified-state> SPC w 3       spacemacs/window-split-triple-columns
+<evilified-state> SPC w 4       spacemacs/window-split-grid
+<evilified-state> SPC w =       balance-windows-area
+<evilified-state> SPC w D       spacemacs/ace-delete-window
+<evilified-state> SPC w F       make-frame
+<evilified-state> SPC w H       evil-window-move-far-left
+<evilified-state> SPC w J       evil-window-move-very-bottom
+<evilified-state> SPC w K       evil-window-move-very-top
+<evilified-state> SPC w L       evil-window-move-far-right
+<evilified-state> SPC w M       ace-swap-window
+<evilified-state> SPC w R       spacemacs/rotate-windows-backward
+<evilified-state> SPC w S       split-window-below-and-focus
+<evilified-state> SPC w U       winner-redo
+<evilified-state> SPC w V       split-window-right-and-focus
+<evilified-state> SPC w W       ace-window
+<evilified-state> SPC w [       spacemacs/window-transient-state/spacemacs/shrink-window-horizontally
+<evilified-state> SPC w ]       spacemacs/window-transient-state/spacemacs/enlarge-window-horizontally
+<evilified-state> SPC w _       spacemacs/maximize-horizontally
+<evilified-state> SPC w b       spacemacs/switch-to-minibuffer-window
+<evilified-state> SPC w c       Prefix Command
+<evilified-state> SPC w d       spacemacs/delete-window
+<evilified-state> SPC w f       follow-mode
+<evilified-state> SPC w h       evil-window-left
+<evilified-state> SPC w j       evil-window-down
+<evilified-state> SPC w k       evil-window-up
+<evilified-state> SPC w l       evil-window-right
+<evilified-state> SPC w m       spacemacs/toggle-maximize-buffer
+<evilified-state> SPC w o       other-frame
+<evilified-state> SPC w p       Prefix Command
+<evilified-state> SPC w r       spacemacs/rotate-windows-forward
+<evilified-state> SPC w s       split-window-below
+<evilified-state> SPC w t       spacemacs/toggle-current-window-dedication
+<evilified-state> SPC w u       winner-undo
+<evilified-state> SPC w v       split-window-right
+<evilified-state> SPC w w       other-window
+<evilified-state> SPC w x       kill-buffer-and-window
+<evilified-state> SPC w {       spacemacs/window-transient-state/spacemacs/shrink-window
+<evilified-state> SPC w |       spacemacs/maximize-vertically
+<evilified-state> SPC w }       spacemacs/window-transient-state/spacemacs/enlarge-window
+<evilified-state> SPC w <S-down>
+                                evil-window-move-very-bottom
+<evilified-state> SPC w <S-left>
+                                evil-window-move-far-left
+<evilified-state> SPC w <S-right>
+                                evil-window-move-far-right
+<evilified-state> SPC w <S-up>  evil-window-move-very-top
+<evilified-state> SPC w <down>  evil-window-down
+<evilified-state> SPC w <left>  evil-window-left
+<evilified-state> SPC w <right>
+                                evil-window-right
+<evilified-state> SPC w <up>    evil-window-up
+
+<evilified-state> SPC b C-d     spacemacs/kill-other-buffers
+<evilified-state> SPC b .       spacemacs/buffer-transient-state/body
+<evilified-state> SPC b 1       buffer-to-window-1
+<evilified-state> SPC b 2       buffer-to-window-2
+<evilified-state> SPC b 3       buffer-to-window-3
+<evilified-state> SPC b 4       buffer-to-window-4
+<evilified-state> SPC b 5       buffer-to-window-5
+<evilified-state> SPC b 6       buffer-to-window-6
+<evilified-state> SPC b 7       buffer-to-window-7
+<evilified-state> SPC b 8       buffer-to-window-8
+<evilified-state> SPC b 9       buffer-to-window-9
+<evilified-state> SPC b B       spacemacs-layouts/non-restricted-buffer-list-helm
+<evilified-state> SPC b D       spacemacs/ace-kill-this-buffer
+<evilified-state> SPC b H       spacemacs/switch-to-help-buffer
+<evilified-state> SPC b N       Prefix Command
+<evilified-state> SPC b P       spacemacs/copy-clipboard-to-whole-buffer
+<evilified-state> SPC b R       spacemacs/safe-revert-buffer
+<evilified-state> SPC b U       lazy-helm/spacemacs/helm-buffers-list-unfiltered
+<evilified-state> SPC b W       spacemacs/goto-buffer-workspace
+<evilified-state> SPC b Y       spacemacs/copy-whole-buffer-to-clipboard
+<evilified-state> SPC b a       persp-add-buffer
+<evilified-state> SPC b b       lazy-helm/helm-mini
+<evilified-state> SPC b d       spacemacs/kill-this-buffer
+<evilified-state> SPC b e       spacemacs/safe-erase-buffer
+<evilified-state> SPC b h       spacemacs/home
+<evilified-state> SPC b m       spacemacs/switch-to-messages-buffer
+<evilified-state> SPC b n       next-buffer
+<evilified-state> SPC b p       previous-buffer
+<evilified-state> SPC b r       persp-remove-buffer
+<evilified-state> SPC b s       spacemacs/switch-to-scratch-buffer
+<evilified-state> SPC b u       spacemacs/reopen-killed-buffer
+<evilified-state> SPC b w       read-only-mode
+<evilified-state> SPC b x       kill-buffer-and-window
+<evilified-state> SPC b C-S-d   spacemacs/kill-matching-buffers-rudely
+
+<evilified-state> SPC x TAB     indent-rigidly
+<evilified-state> SPC x .       spacemacs/drag-stuff-transient-state/body
+<evilified-state> SPC x A       link-hint-open-all-links
+<evilified-state> SPC x J       spacemacs/drag-stuff-transient-state/drag-stuff-down
+<evilified-state> SPC x K       spacemacs/drag-stuff-transient-state/drag-stuff-up
+<evilified-state> SPC x O       link-hint-open-link
+<evilified-state> SPC x R       Prefix Command
+<evilified-state> SPC x U       upcase-region
+<evilified-state> SPC x Y       link-hint-copy-link
+<evilified-state> SPC x a       Prefix Command
+<evilified-state> SPC x c       count-region
+<evilified-state> SPC x d       Prefix Command
+<evilified-state> SPC x e       string-edit-at-point
+<evilified-state> SPC x g       Prefix Command
+<evilified-state> SPC x i       Prefix Command
+<evilified-state> SPC x j       Prefix Command
+<evilified-state> SPC x l       Prefix Command
+<evilified-state> SPC x m       link-hint-open-multiple-links
+<evilified-state> SPC x n       spacemacs/multi-line-transient-state/body
+<evilified-state> SPC x o       link-hint-open-link-at-point
+<evilified-state> SPC x r       Prefix Command
+<evilified-state> SPC x t       Prefix Command
+<evilified-state> SPC x u       downcase-region
+<evilified-state> SPC x w       Prefix Command
+<evilified-state> SPC x x       spacemacs/quickrun
+<evilified-state> SPC x y       link-hint-copy-link-at-point
+
+<evilified-state> SPC h RET     helm-enable-minor-mode
+<evilified-state> SPC h SPC     helm-spacemacs-help
+<evilified-state> SPC h .       helm-spacemacs-help-dotspacemacs
+<evilified-state> SPC h I       spacemacs/report-issue
+<evilified-state> SPC h M       helm-switch-major-mode
+<evilified-state> SPC h P       Prefix Command
+<evilified-state> SPC h T       Prefix Command
+<evilified-state> SPC h d       Prefix Command
+<evilified-state> SPC h f       helm-spacemacs-help-faq
+<evilified-state> SPC h i       lazy-helm/helm-info-at-point
+<evilified-state> SPC h k       which-key-show-top-level
+<evilified-state> SPC h l       helm-spacemacs-help-layers
+<evilified-state> SPC h m       lazy-helm/helm-man-woman
+<evilified-state> SPC h n       view-emacs-news
+<evilified-state> SPC h p       helm-spacemacs-help-packages
+<evilified-state> SPC h r       helm-spacemacs-help-docs
+<evilified-state> SPC h t       helm-spacemacs-help-toggles
+
+<evilified-state> SPC t C-c     spacemacs/toggle-camel-case-motion-globally
+<evilified-state> SPC t C-f     spacemacs/toggle-fill-column-indicator-globally
+<evilified-state> SPC t TAB     spacemacs/toggle-indent-guide-globally
+<evilified-state> SPC t C-p     spacemacs/toggle-smartparens-globally
+<evilified-state> SPC t C-w     spacemacs/toggle-whitespace-globally
+<evilified-state> SPC t -       spacemacs/toggle-centered-point
+<evilified-state> SPC t 8       spacemacs/toggle-highlight-long-lines
+<evilified-state> SPC t C       Prefix Command
+<evilified-state> SPC t D       spacemacs/toggle-debug-on-error
+<evilified-state> SPC t E       Prefix Command
+<evilified-state> SPC t F       spacemacs/toggle-auto-fill-mode
+<evilified-state> SPC t I       spacemacs/toggle-aggressive-indent
+<evilified-state> SPC t K       spacemacs/toggle-which-key
+<evilified-state> SPC t L       spacemacs/toggle-visual-line-navigation
+<evilified-state> SPC t W       spacemacs/toggle-whitespace-cleanup
+<evilified-state> SPC t `       spacemacs/toggle-evil-visual-mark-mode
+<evilified-state> SPC t c       spacemacs/toggle-camel-case-motion
+<evilified-state> SPC t d       spacemacs/toggle-hungry-delete
+<evilified-state> SPC t f       spacemacs/toggle-fill-column-indicator
+<evilified-state> SPC t g       spacemacs/toggle-golden-ratio
+<evilified-state> SPC t h       Prefix Command
+<evilified-state> SPC t i       spacemacs/toggle-indent-guide
+<evilified-state> SPC t k       Prefix Command
+<evilified-state> SPC t l       spacemacs/toggle-truncate-lines
+<evilified-state> SPC t m       Prefix Command
+<evilified-state> SPC t n       Prefix Command
+<evilified-state> SPC t p       spacemacs/toggle-smartparens
+<evilified-state> SPC t t       Prefix Command
+<evilified-state> SPC t v       spacemacs/toggle-smooth-scrolling
+<evilified-state> SPC t w       spacemacs/toggle-whitespace
+<evilified-state> SPC t z       spacemacs/toggle-zero-based-column-indexing
+<evilified-state> SPC t C-S-l   spacemacs/toggle-visual-line-navigation-globally
+<evilified-state> SPC t C-S-w   spacemacs/toggle-global-whitespace-cleanup
+<evilified-state> SPC t C--     spacemacs/toggle-centered-point-globally
+<evilified-state> SPC t C-8     spacemacs/toggle-highlight-long-lines-globally
+
+<evilified-state> SPC z .       spacemacs/fold-transient-state/body
+<evilified-state> SPC z f       spacemacs/zoom-frm-transient-state/body
+<evilified-state> SPC z x       spacemacs/scale-font-transient-state/body
+
+<evilified-state> SPC N <       spacemacs/scroll-transient-state/evil-goto-first-line
+<evilified-state> SPC N >       spacemacs/scroll-transient-state/evil-goto-line
+<evilified-state> SPC N G       spacemacs/scroll-transient-state/evil-goto-line
+<evilified-state> SPC N H       spacemacs/scroll-transient-state/evil-scroll-left
+<evilified-state> SPC N J       spacemacs/scroll-transient-state/evil-scroll-down
+<evilified-state> SPC N K       spacemacs/scroll-transient-state/evil-scroll-up
+<evilified-state> SPC N L       spacemacs/scroll-transient-state/evil-scroll-right
+<evilified-state> SPC N b       spacemacs/scroll-transient-state/evil-scroll-page-up
+<evilified-state> SPC N d       spacemacs/scroll-transient-state/evil-scroll-down
+<evilified-state> SPC N f       spacemacs/scroll-transient-state/evil-scroll-page-down
+<evilified-state> SPC N g       spacemacs/scroll-transient-state/evil-goto-first-line
+<evilified-state> SPC N h       spacemacs/scroll-transient-state/evil-scroll-column-left
+<evilified-state> SPC N j       spacemacs/scroll-transient-state/evil-scroll-line-down
+<evilified-state> SPC N k       spacemacs/scroll-transient-state/evil-scroll-line-up
+<evilified-state> SPC N l       spacemacs/scroll-transient-state/evil-scroll-column-right
+<evilified-state> SPC N u       spacemacs/scroll-transient-state/evil-scroll-up
+
+<evilified-state> SPC s C-s     helm-multi-swoop-all
+<evilified-state> SPC s B       spacemacs/helm-buffers-smart-do-search-region-or-symbol
+<evilified-state> SPC s C       spacemacs/helm-swoop-clear-cache
+<evilified-state> SPC s D       spacemacs/helm-dir-smart-do-search-region-or-symbol
+<evilified-state> SPC s F       spacemacs/helm-files-smart-do-search-region-or-symbol
+<evilified-state> SPC s H       spacemacs/goto-last-searched-ahs-symbol
+<evilified-state> SPC s O       symbol-overlay-remove-all
+<evilified-state> SPC s P       spacemacs/helm-project-smart-do-search-region-or-symbol
+<evilified-state> SPC s S       spacemacs/helm-swoop-region-or-symbol
+<evilified-state> SPC s `       helm-ag-pop-stack
+<evilified-state> SPC s a       Prefix Command
+<evilified-state> SPC s b       spacemacs/helm-buffers-smart-do-search
+<evilified-state> SPC s c       spacemacs/evil-search-clear-highlight
+<evilified-state> SPC s d       spacemacs/helm-dir-smart-do-search
+<evilified-state> SPC s e       evil-iedit-state/iedit-mode
+<evilified-state> SPC s f       spacemacs/helm-files-smart-do-search
+<evilified-state> SPC s g       Prefix Command
+<evilified-state> SPC s h       spacemacs/symbol-highlight
+<evilified-state> SPC s j       lazy-helm/spacemacs/helm-jump-in-buffer
+<evilified-state> SPC s k       Prefix Command
+<evilified-state> SPC s l       lazy-helm/spacemacs/resume-last-search-buffer
+<evilified-state> SPC s o       spacemacs/symbol-overlay
+<evilified-state> SPC s p       spacemacs/helm-project-smart-do-search
+<evilified-state> SPC s r       Prefix Command
+<evilified-state> SPC s s       helm-swoop
+<evilified-state> SPC s t       Prefix Command
+<evilified-state> SPC s w       Prefix Command
+
+<evilified-state> SPC r B       switch-buffer-without-purpose
+<evilified-state> SPC r D       purpose-delete-non-dedicated-windows
+<evilified-state> SPC r P       purpose-set-window-purpose
+<evilified-state> SPC r b       purpose-switch-buffer-with-purpose
+<evilified-state> SPC r d       purpose-toggle-window-purpose-dedicated
+<evilified-state> SPC r e       evil-show-registers
+<evilified-state> SPC r l       lazy-helm/helm-resume
+<evilified-state> SPC r m       lazy-helm/helm-all-mark-rings
+<evilified-state> SPC r p       purpose-switch-buffer-with-some-purpose
+<evilified-state> SPC r r       lazy-helm/helm-register
+<evilified-state> SPC r s       lazy-helm/spacemacs/resume-last-search-buffer
+<evilified-state> SPC r w       spacemacs/last-popwin
+<evilified-state> SPC r y       lazy-helm/helm-show-kill-ring
+
+<evilified-state> SPC D b 3     ediff-buffers3
+<evilified-state> SPC D b B     ediff-backup
+<evilified-state> SPC D b b     ediff-buffers
+<evilified-state> SPC D b p     ediff-patch-buffer
+
+<evilified-state> SPC D d 3     ediff-directories3
+<evilified-state> SPC D d d     ediff-directories
+<evilified-state> SPC D d r     ediff-directory-revisions
+
+<evilified-state> SPC D f .     spacemacs/ediff-dotfile-and-template
+<evilified-state> SPC D f 3     ediff-files3
+<evilified-state> SPC D f f     ediff-files
+<evilified-state> SPC D f p     ediff-patch-file
+<evilified-state> SPC D f v     ediff-revision
+
+<evilified-state> SPC D m b     Prefix Command
+<evilified-state> SPC D m d     Prefix Command
+<evilified-state> SPC D m f     Prefix Command
+<evilified-state> SPC D m r     Prefix Command
+
+<evilified-state> SPC D r l     ediff-regions-linewise
+<evilified-state> SPC D r w     ediff-regions-wordwise
+
+<evilified-state> SPC D w l     ediff-windows-linewise
+<evilified-state> SPC D w w     ediff-windows-wordwise
+
+<evilified-state> SPC K c C     kmacro-set-counter
+<evilified-state> SPC K c a     kmacro-add-counter
+<evilified-state> SPC K c c     kmacro-insert-counter
+<evilified-state> SPC K c f     kmacro-set-format
+
+<evilified-state> SPC K e b     kmacro-bind-to-key
+<evilified-state> SPC K e e     kmacro-edit-macro-repeat
+<evilified-state> SPC K e l     kmacro-edit-lossage
+<evilified-state> SPC K e n     kmacro-name-last-macro
+<evilified-state> SPC K e r     kmacro-to-register
+<evilified-state> SPC K e s     kmacro-step-edit-macro
+
+<evilified-state> SPC K r L     kmacro-view-ring-2nd
+<evilified-state> SPC K r d     kmacro-delete-ring-head
+<evilified-state> SPC K r l     kmacro-call-ring-2nd-repeat
+<evilified-state> SPC K r n     kmacro-cycle-ring-next
+<evilified-state> SPC K r p     kmacro-cycle-ring-previous
+<evilified-state> SPC K r s     kmacro-swap-ring
+
+<evilified-state> SPC k D s     evil-lisp-state-sp-backward-kill-symbol
+<evilified-state> SPC k D w     evil-lisp-state-sp-backward-kill-word
+<evilified-state> SPC k D x     evil-lisp-state-sp-backward-kill-sexp
+
+<evilified-state> SPC k d s     evil-lisp-state-sp-kill-symbol
+<evilified-state> SPC k d w     evil-lisp-state-sp-kill-word
+<evilified-state> SPC k d x     evil-lisp-state-sp-kill-sexp
+
+<evilified-state> SPC k ` k     evil-lisp-state-sp-kill-hybrid-sexp
+<evilified-state> SPC k ` p     evil-lisp-state-sp-push-hybrid-sexp
+<evilified-state> SPC k ` s     evil-lisp-state-sp-slurp-hybrid-sexp
+<evilified-state> SPC k ` t     evil-lisp-state-sp-transpose-hybrid-sexp
+
+<evilified-state> SPC g f f     helm-ls-git-ls
+
+<evilified-state> SPC i U 1     spacemacs/uuidgen-1
+<evilified-state> SPC i U 4     spacemacs/uuidgen-4
+<evilified-state> SPC i U U     spacemacs/uuidgen-4
+
+<evilified-state> SPC i p 1     password-generator-simple
+<evilified-state> SPC i p 2     password-generator-strong
+<evilified-state> SPC i p 3     password-generator-paranoid
+<evilified-state> SPC i p n     password-generator-numeric
+<evilified-state> SPC i p p     password-generator-phonetic
+
+<evilified-state> SPC i l l     lorem-ipsum-insert-list
+<evilified-state> SPC i l p     lorem-ipsum-insert-paragraphs
+<evilified-state> SPC i l s     lorem-ipsum-insert-sentences
+
+<evilified-state> SPC a Y D     epa-delete-keys
+<evilified-state> SPC a Y K     epa-list-secret-keys
+<evilified-state> SPC a Y d     epa-decrypt-file
+<evilified-state> SPC a Y e     epa-encrypt-file
+<evilified-state> SPC a Y i     epa-insert-keys
+<evilified-state> SPC a Y k     epa-list-keys
+<evilified-state> SPC a Y s     Prefix Command
+<evilified-state> SPC a Y v     Prefix Command
+<evilified-state> SPC a Y x     epa-export-keys
+
+<evilified-state> SPC a t s     Prefix Command
+
+<evilified-state> SPC f C d     spacemacs/unix2dos
+<evilified-state> SPC f C u     spacemacs/dos2unix
+
+<evilified-state> SPC f v d     add-dir-local-variable
+<evilified-state> SPC f v f     add-file-local-variable
+<evilified-state> SPC f v p     add-file-local-variable-prop-line
+
+<evilified-state> SPC f M-t     treemacs-find-tag
+
+<evilified-state> SPC f y C     spacemacs/projectile-copy-file-path-with-line-column
+<evilified-state> SPC f y D     spacemacs/projectile-copy-directory-path
+<evilified-state> SPC f y L     spacemacs/projectile-copy-file-path-with-line
+<evilified-state> SPC f y N     spacemacs/copy-file-name-base
+<evilified-state> SPC f y Y     spacemacs/projectile-copy-file-path
+<evilified-state> SPC f y b     spacemacs/copy-buffer-name
+<evilified-state> SPC f y c     spacemacs/copy-file-path-with-line-column
+<evilified-state> SPC f y d     spacemacs/copy-directory-path
+<evilified-state> SPC f y l     spacemacs/copy-file-path-with-line
+<evilified-state> SPC f y n     spacemacs/copy-file-name
+<evilified-state> SPC f y y     spacemacs/copy-file-path
+
+<evilified-state> SPC f e C-e   spacemacs/force-init-spacemacs-env
+<evilified-state> SPC f e D     spacemacs/ediff-dotfile-and-template
+<evilified-state> SPC f e E     dotspacemacs/call-user-env
+<evilified-state> SPC f e I     spacemacs/find-user-early-init-file
+<evilified-state> SPC f e R     dotspacemacs/sync-configuration-layers
+<evilified-state> SPC f e U     configuration-layer/update-packages
+<evilified-state> SPC f e c     spacemacs/recompile-elpa
+<evilified-state> SPC f e d     spacemacs/find-dotfile
+<evilified-state> SPC f e e     spacemacs/edit-env
+<evilified-state> SPC f e i     spacemacs/find-user-init-file
+<evilified-state> SPC f e l     lazy-helm/helm-locate-library
+<evilified-state> SPC f e v     spacemacs/display-and-copy-version
+
+<evilified-state> SPC w c .     spacemacs/centered-buffer-transient-state
+<evilified-state> SPC w c C     spacemacs/toggle-distraction-free
+<evilified-state> SPC w c c     spacemacs/toggle-centered-buffer
+
+<evilified-state> SPC w p P     pupo/close-all-windows
+<evilified-state> SPC w p m     popwin:messages
+<evilified-state> SPC w p p     pupo/close-window
+
+<evilified-state> SPC b N TAB   make-indirect-buffer
+<evilified-state> SPC b N I     clone-indirect-buffer-other-window-without-purpose
+<evilified-state> SPC b N f     spacemacs/new-empty-buffer-new-frame
+<evilified-state> SPC b N h     spacemacs/new-empty-buffer-left
+<evilified-state> SPC b N i     clone-indirect-buffer
+<evilified-state> SPC b N j     spacemacs/new-empty-buffer-below
+<evilified-state> SPC b N k     spacemacs/new-empty-buffer-above
+<evilified-state> SPC b N l     spacemacs/new-empty-buffer-right
+<evilified-state> SPC b N n     spacemacs/new-empty-buffer
+
+<evilified-state> SPC x t c     transpose-chars
+<evilified-state> SPC x t e     transpose-sexps
+<evilified-state> SPC x t l     transpose-lines
+<evilified-state> SPC x t p     transpose-paragraphs
+<evilified-state> SPC x t s     transpose-sentences
+<evilified-state> SPC x t w     transpose-words
+
+<evilified-state> SPC x l C     spacemacs/sort-lines-by-column-reverse
+<evilified-state> SPC x l S     spacemacs/sort-lines-reverse
+<evilified-state> SPC x l c     spacemacs/sort-lines-by-column
+<evilified-state> SPC x l d     spacemacs/duplicate-line-or-region
+<evilified-state> SPC x l k     spacemacs/kill-back-to-indentation
+<evilified-state> SPC x l r     spacemacs/randomize-lines
+<evilified-state> SPC x l s     spacemacs/sort-lines
+<evilified-state> SPC x l u     spacemacs/uniquify-lines
+
+<evilified-state> SPC x j c     set-justification-center
+<evilified-state> SPC x j f     set-justification-full
+<evilified-state> SPC x j l     set-justification-left
+<evilified-state> SPC x j n     set-justification-none
+<evilified-state> SPC x j r     set-justification-right
+
+<evilified-state> SPC x d SPC   cycle-spacing
+<evilified-state> SPC x d l     delete-blank-lines
+<evilified-state> SPC x d w     delete-trailing-whitespace
+
+<evilified-state> SPC x i -     string-inflection-kebab-case
+<evilified-state> SPC x i C     string-inflection-camelcase
+<evilified-state> SPC x i U     string-inflection-upcase
+<evilified-state> SPC x i _     string-inflection-underscore
+<evilified-state> SPC x i c     string-inflection-lower-camelcase
+<evilified-state> SPC x i i     spacemacs/string-inflection-transient-state/body
+<evilified-state> SPC x i k     string-inflection-kebab-case
+<evilified-state> SPC x i u     string-inflection-underscore
+
+<evilified-state> SPC x g L     spacemacs/set-google-translate-languages
+<evilified-state> SPC x g Q     google-translate-query-translate-reverse
+<evilified-state> SPC x g T     google-translate-at-point-reverse
+<evilified-state> SPC x g l     spacemacs/set-google-translate-target-language
+<evilified-state> SPC x g q     google-translate-query-translate
+<evilified-state> SPC x g t     google-translate-at-point
+
+<evilified-state> SPC x a %     spacemacs/align-repeat-percent
+<evilified-state> SPC x a &     spacemacs/align-repeat-ampersand
+<evilified-state> SPC x a (     spacemacs/align-repeat-left-paren
+<evilified-state> SPC x a )     spacemacs/align-repeat-right-paren
+<evilified-state> SPC x a ,     spacemacs/align-repeat-comma
+<evilified-state> SPC x a .     spacemacs/align-repeat-decimal
+<evilified-state> SPC x a :     spacemacs/align-repeat-colon
+<evilified-state> SPC x a ;     spacemacs/align-repeat-semicolon
+<evilified-state> SPC x a =     spacemacs/align-repeat-equal
+<evilified-state> SPC x a L     evil-lion-right
+<evilified-state> SPC x a [     spacemacs/align-repeat-left-square-brace
+<evilified-state> SPC x a \     spacemacs/align-repeat-backslash
+<evilified-state> SPC x a ]     spacemacs/align-repeat-right-square-brace
+<evilified-state> SPC x a a     align
+<evilified-state> SPC x a c     align-current
+<evilified-state> SPC x a l     evil-lion-left
+<evilified-state> SPC x a m     spacemacs/align-repeat-math-oper
+<evilified-state> SPC x a r     spacemacs/align-repeat
+<evilified-state> SPC x a {     spacemacs/align-repeat-left-curly-brace
+<evilified-state> SPC x a |     spacemacs/align-repeat-bar
+<evilified-state> SPC x a }     spacemacs/align-repeat-right-curly-brace
+
+<evilified-state> SPC x w c     spacemacs/count-words-analysis
+<evilified-state> SPC x w d     define-word-at-point
+<evilified-state> SPC x w r     spacemacs/randomize-words
+
+<evilified-state> SPC x r '     rxt-convert-to-strings
+<evilified-state> SPC x r /     rxt-explain
+<evilified-state> SPC x r c     rxt-convert-syntax
+<evilified-state> SPC x r e     Prefix Command
+<evilified-state> SPC x r p     Prefix Command
+<evilified-state> SPC x r t     rxt-toggle-elisp-rx
+<evilified-state> SPC x r x     rxt-convert-to-rx
+
+<evilified-state> SPC h P k     profiler-stop
+<evilified-state> SPC h P r     profiler-report
+<evilified-state> SPC h P s     profiler-start
+<evilified-state> SPC h P w     profiler-report-write-profile
+
+<evilified-state> SPC h d F     lazy-helm/spacemacs/helm-faces
+<evilified-state> SPC h d K     describe-keymap
+<evilified-state> SPC h d P     configuration-layer/describe-package
+<evilified-state> SPC h d T     describe-theme
+<evilified-state> SPC h d a     lazy-helm/helm-apropos
+<evilified-state> SPC h d b     describe-bindings
+<evilified-state> SPC h d c     describe-char
+<evilified-state> SPC h d f     describe-function
+<evilified-state> SPC h d k     describe-key
+<evilified-state> SPC h d l     spacemacs/describe-last-keys
+<evilified-state> SPC h d m     lazy-helm/describe-mode
+<evilified-state> SPC h d p     describe-package
+<evilified-state> SPC h d s     spacemacs/describe-system-info
+<evilified-state> SPC h d t     describe-text-properties
+<evilified-state> SPC h d v     describe-variable
+<evilified-state> SPC h d x     lazy-helm/spacemacs/describe-ex-command
+
+<evilified-state> SPC h T e     emacs-tutorial
+<evilified-state> SPC h T v     evil-tutor-start
+
+<evilified-state> SPC t t c     timeclock-change
+<evilified-state> SPC t t e     timeclock-workday-elapsed-string
+<evilified-state> SPC t t g     timeclock-workday-remaining-string
+<evilified-state> SPC t t i     timeclock-in
+<evilified-state> SPC t t l     timeclock-when-to-leave-string
+<evilified-state> SPC t t m     timeclock-mode-line-display
+<evilified-state> SPC t t o     timeclock-out
+<evilified-state> SPC t t r     timeclock-reread-log
+<evilified-state> SPC t t s     timeclock-status-string
+<evilified-state> SPC t t u     timeclock-update-mode-line
+<evilified-state> SPC t t v     timeclock-visit-timelog
+<evilified-state> SPC t t w     timeclock-when-to-leave-string
+
+<evilified-state> SPC t C d     rainbow-delimiters-mode
+
+<evilified-state> SPC t m M     spacemacs/toggle-mode-line-major-mode
+<evilified-state> SPC t m T     spacemacs/toggle-mode-line
+<evilified-state> SPC t m V     spacemacs/toggle-mode-line-new-version
+<evilified-state> SPC t m b     spacemacs/toggle-mode-line-battery
+<evilified-state> SPC t m c     spacemacs/toggle-mode-line-org-clock
+<evilified-state> SPC t m m     spacemacs/toggle-mode-line-minor-modes
+<evilified-state> SPC t m p     spacemacs/toggle-mode-line-point-position
+<evilified-state> SPC t m r     spacemacs/toggle-mode-line-responsive
+<evilified-state> SPC t m s     spacemacs/toggle-minibuffer-system-monitor
+<evilified-state> SPC t m t     spacemacs/toggle-display-time
+<evilified-state> SPC t m v     spacemacs/toggle-mode-line-version-control
+
+<evilified-state> SPC t n a     spacemacs/toggle-absolute-line-numbers
+<evilified-state> SPC t n r     spacemacs/toggle-relative-line-numbers
+<evilified-state> SPC t n v     spacemacs/toggle-visual-line-numbers
+
+<evilified-state> SPC t h a     spacemacs/toggle-automatic-symbol-highlight
+<evilified-state> SPC t h c     spacemacs/toggle-highlight-indentation-current-column
+<evilified-state> SPC t h h     spacemacs/toggle-highlight-current-line-globally
+<evilified-state> SPC t h i     spacemacs/toggle-highlight-indentation
+<evilified-state> SPC t h p     highlight-parentheses-mode
+<evilified-state> SPC t h s     spacemacs/toggle-syntax-highlighting
+
+<evilified-state> SPC t E e     spacemacs/toggle-holy-mode
+<evilified-state> SPC t E h     spacemacs/toggle-hybrid-mode
+
+<evilified-state> SPC t k M     spacemacs/toggle-which-key-full-major-mode-map
+<evilified-state> SPC t k k     spacemacs/toggle-which-key-toggle-persistent
+<evilified-state> SPC t k m     spacemacs/toggle-which-key-major-mode-map
+<evilified-state> SPC t k t     spacemacs/toggle-which-key-top-level
+
+<evilified-state> SPC s t B     spacemacs/helm-buffers-do-pt-region-or-symbol
+<evilified-state> SPC s t D     spacemacs/helm-dir-do-pt-region-or-symbol
+<evilified-state> SPC s t F     spacemacs/helm-files-do-pt-region-or-symbol
+<evilified-state> SPC s t P     spacemacs/helm-project-do-pt-region-or-symbol
+<evilified-state> SPC s t b     spacemacs/helm-buffers-do-pt
+<evilified-state> SPC s t d     spacemacs/helm-dir-do-pt
+<evilified-state> SPC s t f     spacemacs/helm-files-do-pt
+<evilified-state> SPC s t p     spacemacs/helm-project-do-pt
+
+<evilified-state> SPC s r B     spacemacs/helm-buffers-do-rg-region-or-symbol
+<evilified-state> SPC s r D     spacemacs/helm-dir-do-rg-region-or-symbol
+<evilified-state> SPC s r F     spacemacs/helm-files-do-rg-region-or-symbol
+<evilified-state> SPC s r P     spacemacs/helm-project-do-rg-region-or-symbol
+<evilified-state> SPC s r b     spacemacs/helm-buffers-do-rg
+<evilified-state> SPC s r d     spacemacs/helm-dir-do-rg
+<evilified-state> SPC s r f     spacemacs/helm-files-do-rg
+<evilified-state> SPC s r p     spacemacs/helm-project-do-rg
+
+<evilified-state> SPC s k B     spacemacs/helm-buffers-do-ack-region-or-symbol
+<evilified-state> SPC s k D     spacemacs/helm-dir-do-ack-region-or-symbol
+<evilified-state> SPC s k F     spacemacs/helm-files-do-ack-region-or-symbol
+<evilified-state> SPC s k P     spacemacs/helm-project-do-ack-region-or-symbol
+<evilified-state> SPC s k b     spacemacs/helm-buffers-do-ack
+<evilified-state> SPC s k d     spacemacs/helm-dir-do-ack
+<evilified-state> SPC s k f     spacemacs/helm-files-do-ack
+<evilified-state> SPC s k p     spacemacs/helm-project-do-ack
+
+<evilified-state> SPC s a A     spacemacs/helm-file-do-ag-region-or-symbol
+<evilified-state> SPC s a B     spacemacs/helm-buffers-do-ag-region-or-symbol
+<evilified-state> SPC s a D     spacemacs/helm-dir-do-ag-region-or-symbol
+<evilified-state> SPC s a F     spacemacs/helm-files-do-ag-region-or-symbol
+<evilified-state> SPC s a P     spacemacs/helm-project-do-ag-region-or-symbol
+<evilified-state> SPC s a a     helm-ag-this-file
+<evilified-state> SPC s a b     helm-do-ag-buffers
+<evilified-state> SPC s a d     spacemacs/helm-dir-do-ag
+<evilified-state> SPC s a f     helm-do-ag
+<evilified-state> SPC s a p     spacemacs/helm-project-do-ag
+
+<evilified-state> SPC s w g     lazy-helm/helm-google-suggest
+
+<evilified-state> SPC s g B     lazy-helm/spacemacs/helm-buffers-do-grep-region-or-symbol
+<evilified-state> SPC s g F     lazy-helm/spacemacs/helm-files-do-grep-region-or-symbol
+<evilified-state> SPC s g G     lazy-helm/spacemacs/helm-file-do-grep-region-or-symbol
+<evilified-state> SPC s g b     lazy-helm/spacemacs/helm-buffers-do-grep
+<evilified-state> SPC s g f     lazy-helm/spacemacs/helm-files-do-grep
+<evilified-state> SPC s g g     lazy-helm/spacemacs/helm-file-do-grep
+<evilified-state> SPC s g p     helm-projectile-grep
+
+<evilified-state> SPC D m b 3   ediff-merge-buffers-with-ancestor
+<evilified-state> SPC D m b b   ediff-merge-buffers
+
+<evilified-state> SPC D m d 3   ediff-merge-directories-with-ancestor
+<evilified-state> SPC D m d d   ediff-merge-directories
+
+<evilified-state> SPC D m f 3   ediff-merge-files-with-ancestor
+<evilified-state> SPC D m f f   ediff-merge-files
+
+<evilified-state> SPC D m r 3   ediff-merge-revisions-with-ancestor
+<evilified-state> SPC D m r r   ediff-merge-revisions
+
+<evilified-state> SPC a Y s f   epa-sign-file
+<evilified-state> SPC a Y s m   epa-sign-mail
+<evilified-state> SPC a Y s r   epa-sign-region
+
+<evilified-state> SPC a Y v c   epa-verify-cleartext-in-region
+<evilified-state> SPC a Y v f   epa-verify-file
+<evilified-state> SPC a Y v r   epa-verify-region
+
+<evilified-state> SPC x r p '   rxt-pcre-to-strings
+<evilified-state> SPC x r p /   rxt-explain-pcre
+<evilified-state> SPC x r p e   rxt-pcre-to-elisp
+<evilified-state> SPC x r p x   rxt-pcre-to-rx
+
+<evilified-state> SPC x r e '   rxt-elisp-to-strings
+<evilified-state> SPC x r e /   rxt-explain-elisp
+<evilified-state> SPC x r e p   rxt-elisp-to-pcre
+<evilified-state> SPC x r e t   rxt-toggle-elisp-rx
+<evilified-state> SPC x r e x   rxt-elisp-to-rx
+
+
+
+(fn &optional ARG)
+
+Vi-Tilde-Fringe minor mode (no indicator):
+Buffer-local minor mode to display tildes in the fringe when the line is
+empty.
+
+Which-Key minor mode (indicator Ⓚ):
+Toggle which-key-mode.
+
+(fn &optional ARG)
+
+Winner minor mode (no indicator):
+Toggle Winner mode on or off.
+With a prefix argument ARG, enable Winner mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil, and toggle it if ARG is ‘toggle’.
+
+Winner mode is a global minor mode that records the changes in
+the window configuration (i.e. how the frames are partitioned
+into windows) so that the changes can be "undone" using the
+command ‘winner-undo’.  By default this one is bound to the key
+sequence ‘C-c <left>’.  If you change your mind (while undoing),
+you can press ‘C-c <right>’ (calling ‘winner-redo’).
+
+Winum minor mode (no indicator):
+A minor mode that allows for managing windows based on window numbers.
+
+Xterm-Mouse minor mode (no indicator):
+Toggle XTerm mouse mode.
+With a prefix argument ARG, enable XTerm mouse mode if ARG is
+positive, and disable it otherwise.  If called from Lisp, enable
+the mode if ARG is omitted or nil.
+
+Turn it on to use Emacs mouse commands, and off to use xterm mouse commands.
+This works in terminal emulators compatible with xterm.  It only
+works for simple uses of the mouse.  Basically, only non-modified
+single clicks are supported.  When turned on, the normal xterm
+mouse functionality for such clicks is still available by holding
+down the SHIFT key while pressing the mouse button.
+
+(fn &optional ARG)
+
+[forward]
