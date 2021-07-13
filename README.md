@@ -18,6 +18,23 @@ A detailed writeup of the results can be found in [./Results/Results.pdf](./Resu
   - This program will take approximately 1 minute to run.	
   - All plots are outputted to the [./Plots](./Plots) subdirectory.
 
+#### Description of Directories ####
+
+- [Code_profiles](./Code_profiles)
+  - Contains `profzis` code profiling output for data collection. Profiles are stored as HTML documents
+- [Data](./Data)
+  - Contains Superconductor Data used in Analysis
+- [Output](./Output)
+  - Contains error statistics for XGBoost predicting critical temperature for the data in [Data](./Data). 
+- [Paper_Code](./Paper_Code)
+  - Contains the original paper on using XGBoost for critical temperature prediction, as well as the R code used to generate and test the model in the original paper.
+- [Plots](./Plots)
+  - Contains plots generated off of the summary error statistics in [Output](./Output).
+- [Results](./Results)
+  - Contains a pdf writeup for the results of the analysis. Also contains a tex document used to generate the pdf. All plots used in the writeup are taken from [./Plots](./Plots)
+- [src](./src)
+  - Contains the source R files used to generate summary error statistics and plots.
+
 #### Details on the Superconductor Dataset ####
 
 The data used in this analysis is the [Superconductivity Data Dataset](https://archive.ics.uci.edu/ml/datasets/Superconductivty+Data) from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php). This dataset is locally stored in [./Data/](./Data) as `tc.RData`  and consists of the following two tables:
