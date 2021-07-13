@@ -6,6 +6,8 @@ This project is a review of the XGBoost model for predicting the critical temper
 
 In the linked paper, a RMSE of ~9.5 is given as the only metric for the model's performance. In this project I conduct a finer grained analysis of the predictive power of XGBoost at the task of predicting critical temperatures. More specifically, I analyze the performance of XGBoost across not only a general class of superconductors (as is done in the original paper), but also on certain classes of superconductors which are of particular practical interest. Additionally, I analyze how XGBoost performs on superconductors in different critical temperature quartiles.
 
+A detailed writeup of the results can be found in [./Results/Results.pdf](./Results/Results.pdf). 
+
 #### Instructions on Running Code ####
 - In terminal, navigate to [`./src`](./src)
 - To test the XGBoost model, collect error statistics and re-generate plots, call `$Rscript Main.R`
