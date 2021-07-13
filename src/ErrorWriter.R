@@ -18,7 +18,6 @@ write_errs <- function(folder, file, subset_list, retrain=FALSE, n=50){
 		err_df <- err_df %>% select(-subset)
 	}
 	saveRDS(err_df, file=path)
-	print(err_df)
 }
 
 

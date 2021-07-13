@@ -10,18 +10,18 @@ A detailed writeup of the results can be found in [./Results/Results.pdf](./Resu
 
 #### Instructions on Running Code ####
 - In terminal, navigate to [`./src`](./src)
-- To test the XGBoost model, collect error statistics and re-generate plots, call `$Rscript Main.R`
+- To test the XGBoost model, collect error statistics and re-generate plots, call `$ Rscript Main.R`
   - This program will take approximatively 30 minutes to run on 4 cores.
-- To test XGBoost model and collect error statistics without re-generating plots, call `$Rscript ErrorWriter.R`
+- To test XGBoost model and collect error statistics without re-generating plots, call `$ Rscript ErrorWriter.R`
   - This program will take approximately 30 minutes to run on 4 cores
-- To re-generate plots using error statistics collected earlier, run `$Rscript ErrorAnalysis.R`
+- To re-generate plots using error statistics collected earlier, run `$ Rscript ErrorAnalysis.R`
   - This program will take approximately 1 minute to run.	
   - All plots are outputted to the [./Plots](./Plots) subdirectory.
 
 #### Description of Directories ####
 
 - [Code_profiles](./Code_profiles)
-  - Contains `profzis` code profiling output for data collection. Profiles are stored as HTML documents
+  - Contains `profvis` code profiling output for data collection. Profiles are stored as HTML documents
 - [Data](./Data)
   - Contains Superconductor Data used in Analysis
 - [Output](./Output)
@@ -31,7 +31,7 @@ A detailed writeup of the results can be found in [./Results/Results.pdf](./Resu
 - [Plots](./Plots)
   - Contains plots generated off of the summary error statistics in [Output](./Output).
 - [Results](./Results)
-  - Contains a pdf writeup for the results of the analysis. Also contains a tex document used to generate the pdf. All plots used in the writeup are taken from [./Plots](./Plots)
+  - Contains a pdf writeup for the results of the analysis. Also contains a `.tex` document used to generate the pdf. All plots used in the writeup are taken from [./Plots](./Plots)
 - [src](./src)
   - Contains the source R files used to generate summary error statistics and plots.
 
@@ -56,8 +56,8 @@ The data used in this analysis is the [Superconductivity Data Dataset](https://a
   - [control_err.rds](./Output/control_err.rds) : Error statistics collected off of 50 random test-train partitions of the entire testing data.
   - [quartile_err.rds](./Output/quartile_err.rds) : Error statistics collected separately on each critical temperature quartile after 50 random test-train partitions of the testing data. Each superconductor in the test split is placed in a quartile based off of its _true_ critical temperature.
   - [output_quartile_errs.rds](./Output/output_quartile_errs.rds) : Error statistics collected separately on each critical temperature quartile after 50 random test-train partitions of the testing data. Each superconductor in the test split is placed in a quartile based off of its _predicted_ critical temperature.
-  - [elemental_err_nrt.rds](./Output/elemental_err_nrt.rds) : Error statistics collected separately for superconductors containing Fe, Hg, Cu, and MgB_2.
-  - [elemental_err_rt.rds](./Output/elemental_err_rt.rds) : Error statistics collected separately for superconductors containing Fe, Hg, Cu, and MgB_2 when the XGBoost decision tree is trained exclusively on superconductors containing Fe, Hg, Cu, or MgB_2, respectively.
+  - [elemental_err_nrt.rds](./Output/elemental_err_nrt.rds) : Error statistics collected separately for superconductors containing Fe, Hg, Cu, and $\text{MgB}_2$.
+  - [elemental_err_rt.rds](./Output/elemental_err_rt.rds) : Error statistics collected separately for superconductors containing Fe, Hg, Cu, and MgB_2 when the XGBoost decision tree is trained exclusively on superconductors containing Fe, Hg, Cu, or $\text{MgB}_2$, respectively.
 
 #### Details on Model Training ###
 - All machine learning was performed using the R [XGBoost](https://cran.r-project.org/web/packages/xgboost/index.html) package. 
@@ -66,7 +66,7 @@ The data used in this analysis is the [Superconductivity Data Dataset](https://a
 
 #### Overview of Program Files in [./src/](./src) #####
 - [Dependencies.R](./src/Dependencies.R): File programmatically ensures that all needed packages are installed and loaded into the environment. File also clears the environment of all variables and objects to prevent memory overuse from running source files interactively, thus, this file should only be run at the start of Data Analysis.
-- [DataSplitter.R](./src/DataSplitter.R) : File handles random 1/3 test 2/3 train partitioning of superconductor data. File also generates subsets of superconductors containing Fe, Mg, Hg, and MgB_2, and partitions the superconductors by critical temperature quartile.
+- [DataSplitter.R](./src/DataSplitter.R) : File handles random 1/3 test 2/3 train partitioning of superconductor data. File also generates subsets of superconductors containing Fe, Mg, Hg, and $\text{MgB}_2$, and partitions the superconductors by critical temperature quartile.
 - [Model.R](Model.R) : File handles training XGBoost model and prediction of critical temperature values.
 - [Buffer.R](./src/Buffer.R) : Used for runtime optimization. Caches test and train data indices and tuned XGBoost models trained on those indices. When appropriate, XGBoost models and test-train splits are re-used rather than re-computed from scratch.
 - [ErrorCalculator.R](./src/ErrorCalculator.R) : File handles collection of error statistics for predictions by XGBoost given training data and testing data.
