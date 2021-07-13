@@ -176,7 +176,7 @@ quartile <- readRDS('../Output/quartile_err.rds')
 ########################################## Generate Summary Data Tables and Print to Png
 ## Control data (entire dataset)
 control_df <- make_summary_df(control,3)
-print_table('control_tbl', control_df)
+print_table('control_tbl.png', control_df)
 ##### Element Subsets
 element_subsets <- c('Fe', 'Hg', 'Cu', 'B2Mg')
 ## No retrain
@@ -184,21 +184,21 @@ element_nrt_df <- make_subset_summary_df(elemental_nrt,
                                           element_subsets,
                                           subset_lbl="Element",
                                           digits=3)
-print_table('element_no_retrain_tbl', element_nrt_df)
+print_table('element_no_retrain_tbl.png', element_nrt_df)
 
 ## Retrain
 element_rt_df <- make_subset_summary_df(elemental_rt,
                                          element_subsets,
                                          subset_lbl="Element",
                                          digits=3)
-print_table('element_retrain_tbl', element_rt_df)
+print_table('element_retrain_tbl.png', element_rt_df)
 
 ##### Decile data
 decile_df <-  make_subset_summary_df(decile,
                                       1:10,
                                       subset_lbl="Decile",
                                       digits=3)
-print_table('decile_tbl', decile_df)
+print_table('decile_tbl.png', decile_df)
 
 ##### Quartile data
 ##True Tc Quartile
@@ -206,14 +206,14 @@ quartile_true_df <-  make_subset_summary_df(quartile,
                                              1:4,
                                              subset_lbl='Quartile',
                                              digits=3)
-print_table('quartile_true_tbl', quartile_true_df)
+print_table('quartile_true_tbl.png', quartile_true_df)
 
 ##Predicted Tc Quartile
 quartile_pred_df <- make_subset_summary_df(predicted_quartile,
                                             1:4,
                                             subset_lbl='Quartile',
                                             digits=3)
-print_table('quartile_pred_tbl', quartile_pred_df)
+print_table('quartile_pred_tbl.png', quartile_pred_df)
 
 ######################################### Plot Generation
 
